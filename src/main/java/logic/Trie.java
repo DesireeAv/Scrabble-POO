@@ -5,8 +5,8 @@
 package logic;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 /**
  *
@@ -54,26 +54,30 @@ public class Trie {
     }
     
     public void fill(){
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader("Diccionario.txt"));
-            String line;
+        String nombreArchivo = "/DiccionarioLAST.txt";
 
-            while ((line = reader.readLine()) != null) {
-                // Inserta cada palabra en el Trie
-                this.insert(line.trim());
+        // Abre el archivo como un recurso del classpath
+        try (InputStream is = Trie.class.getResourceAsStream(nombreArchivo);
+             BufferedReader br = new BufferedReader(new InputStreamReader(is))) {
+
+            // Lee el contenido del archivo línea por línea
+            String linea;
+            while ((linea = br.readLine()) != null) {
+                this.insert(linea);
             }
 
-            reader.close();
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
     
     public static void main(String[] args) {
         Trie trie = new Trie();
+        trie.fill();
 
+        
         System.out.println(trie.search("amigo"));  // Debería imprimir true
-        System.out.println(trie.search("app"));    // Debería imprimir true
+        System.out.println(trie.search("cigoñuela"));    // Debería imprimir true
         System.out.println(trie.search("ap"));     // Debería imprimir false
     }
 }
