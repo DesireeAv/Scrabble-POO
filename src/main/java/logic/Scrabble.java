@@ -11,6 +11,8 @@ package logic;
 public class Scrabble {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        String res = "Hol";
+        res+="a";
+        System.out.println(res);
     }
 }
