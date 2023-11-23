@@ -45,11 +45,22 @@ public class JugadaActual {
         }
         return false;
     }
+    private Pair<Integer, Integer> inicioPalabra(FichasTablero table, boolean vertical, Pair<Integer, Integer> par){
+        Pair<Integer, Integer> res = new Pair(par);
+        if(vertical){
+            while(table.getFichaPar(par).isColocada() &&  -1 < par.getFirst()){
+                res = new Pair(par);
+                par.setFirst(par.getFirst()-1);
+            }
+            return res;
+        }
+        while(table.getFichaPar(par).isColocada() && -1 < par.getSecond()){
+            res = new Pair(par);
+            par.setSecond(par.getSecond() + 1);
+        }
+    }
     
     public int puntosJugada(FichasTablero table){
-        if(posicionesNuevas.size() == 1){
-            
-        }
         
         return 0;
     }

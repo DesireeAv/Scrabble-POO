@@ -14,6 +14,10 @@ import java.util.List;
 public class FichasTablero {
     private List <List<Ficha>> matrizFichas = new LinkedList<>();
     
+    public FichasTablero(){
+        llenarMatriz();
+    }
+    
     public void llenarMatriz(){
         for(int i = 0 ; i<15 ; i++){
             List<Ficha> fila = new LinkedList<>();
@@ -22,6 +26,14 @@ public class FichasTablero {
             }
             matrizFichas.add(fila);
         }
+    }
+    
+    public Ficha getFicha(int i, int j){
+        return matrizFichas.get(i).get(j);
+    }
+    
+    public Ficha getFichaPar(Pair<Integer, Integer> par){
+        return matrizFichas.get(par.getFirst()).get(par.getSecond());
     }
     
     public boolean colocarFicha(Ficha fich, int i, int j){
