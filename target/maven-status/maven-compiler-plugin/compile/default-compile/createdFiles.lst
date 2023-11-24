@@ -6,11 +6,11 @@ logic/Trie$TrieNode.class
 visual/Tablero$12.class
 logic/Scrabble.class
 logic/JugadaActual.class
+visual/Tablero$13.class
 logic/Pair.class
 logic/Trie.class
 visual/Tablero$4.class
 visual/Tablero$8.class
-logic/LeerArchivoTexto.class
 visual/Tablero$7.class
 visual/Tablero$5.class
 logic/Ficha.class

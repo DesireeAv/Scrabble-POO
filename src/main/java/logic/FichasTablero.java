@@ -23,7 +23,16 @@ public class FichasTablero {
     public FichasTablero(){
         llenarMatriz();
         llenarColores();
-   }
+    }
+    
+    public FichasTablero(FichasTablero copia){
+        for(List<Ficha> fila : copia.getMatrizFichas()){
+            matrizFichas.add(new LinkedList<>());
+            for(Ficha ficha : fila){
+                matrizFichas.get(matrizFichas.size()-1).add(new Ficha(ficha));
+            }
+        }
+    }
     
     public void llenarMatriz(){
         for(int i = 0 ; i<15 ; i++){
@@ -89,7 +98,44 @@ public class FichasTablero {
                 }
             }
         }
-        return true;
+        return esConexo();
+    }
+  
+    private int cantFichas(){
+        int cant = 0;
+        for(int i = 0 ; i<15; i++){
+            for(int j = 0 ; i<15 ; i++){
+                if(matrizFichas.get(i).get(j).isColocada()) cant++;
+            }
+        }
+        return cant;
+    }
+    private boolean esValido(int i, int j){
+        return (i<15 && i>-1 && j<15 && j>-1);
+    }
+    
+    private boolean esConexo(){
+        int contador = 0;
+        int cantFichas = cantFichas();
+        int[][] matVisitados = new int[15][15];
+        int[][] posiciones = {{1,0}, {0, 1}, {-1, 0}, {0, -1}};
+        Pair<Integer, Integer> par = new Pair(7,7);
+        if(!getFichaPar(par).isColocada())return true;
+        List <Pair<Integer, Integer>> bfs = new LinkedList<>();
+        bfs.add(par);
+        while(!bfs.isEmpty()){
+            int i  = bfs.get(bfs.size() -1).getFirst();
+            int j = bfs.get(bfs.size() -1).getSecond();
+            contador++;
+            matVisitados[i][j] = 1;
+            for(int [] p : posiciones){
+                if(esValido(i+p[0], j+p[1]) && matrizFichas.get(i+p[0]).get(j+p[1]).isColocada()){
+                    bfs.add(0, new Pair(i+p[0], j+p[1]));
+                }
+            }
+            bfs.remove(bfs.size()-1);
+        }
+        return contador == cantFichas;
     }
     
     private void llenarParesRojos() {
@@ -202,7 +248,7 @@ public class FichasTablero {
     public void pintarVerdes(){
         for(int i = 0; i<15; i++){
             for(int j = 0; j<15; j++){
-                getFicha(i, j).setColor(new Color(100, 200,34));
+                getFicha(i, j).setColor(new Color(15, 51,39));
                 getFicha(i, j).setLetra("  ");
               }
           }     
@@ -232,7 +278,7 @@ public class FichasTablero {
             getFicha(par.getFirst(),par.getSecond()).setLetra("2P");
         }
     }
-    public void pintarTodo(){
+    public void llenarCuadros(){
         pintarVerdes();
         pintarRojas();
         pintarCelestes();

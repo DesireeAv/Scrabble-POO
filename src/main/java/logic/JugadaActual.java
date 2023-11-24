@@ -117,6 +117,27 @@ public class JugadaActual {
         return false;
     }
     
+//    private boolean esLegal(FichasTablero table){
+//        for(Pair<Integer, Integer> pares : posicionesNuevas){
+//            int columnaAct = pares.getSecond();
+//            int filaAct = pares.getFirst();
+//            if(columnaAct + 1 < 15 ){
+//                Pair ady = new Pair(pares.getFirst(), columnaAct +1);
+//                if(table.getFichaPar(ady).isColocada() && !ady.elementoDe(posicionesNuevas))return true;}
+//            if(columnaAct - 1 > -1 ){
+//                Pair ady = new Pair(pares.getFirst(), columnaAct - 1);
+//                if(table.getFichaPar(ady).isColocada() && !ady.elementoDe(posicionesNuevas))return true;}
+//            if(filaAct + 1 < 15 ){
+//                Pair ady = new Pair(filaAct + 1, pares.getSecond());
+//                if(table.getFichaPar(ady).isColocada() && !ady.elementoDe(posicionesNuevas))return true;}
+//            if(filaAct - 1 > -1 ){
+//                Pair ady = new Pair(filaAct - 1, pares.getSecond());
+//                if(table.getFichaPar(ady).isColocada() && !ady.elementoDe(posicionesNuevas))return true;
+//            }
+//        }
+//        return false;
+//    }
+    
     
     public int puntosJugada(FichasTablero table){
         int total = 0;

@@ -19,9 +19,10 @@ public class Trie {
 
     public Trie() {
         root = new TrieNode();
+        fill();
     }
 
-    public void insert(String word) {
+    private void insert(String word) {
         TrieNode node = root;
         for (char c : word.toCharArray()) {
             if (!node.children.containsKey(c)) {
@@ -42,16 +43,6 @@ public class Trie {
         }
         return node.isEndOfWord;
     }
-
-    private class TrieNode {
-        private HashMap<Character, TrieNode> children;
-        private boolean isEndOfWord;
-
-        public TrieNode() {
-            children = new HashMap<>();
-            isEndOfWord = false;
-        }
-    }
     
     public void fill(){
         String nombreArchivo = "/DiccionarioLAST.txt";
@@ -70,14 +61,15 @@ public class Trie {
             e.printStackTrace();
         }
     }
-    
-    public static void main(String[] args) {
-        Trie trie = new Trie();
-        trie.fill();
 
-        
-        System.out.println(trie.search("amigo"));  // Debería imprimir true
-        System.out.println(trie.search("cigoñuela"));    // Debería imprimir true
-        System.out.println(trie.search("ap"));     // Debería imprimir false
+    private class TrieNode {
+        private HashMap<Character, TrieNode> children;
+        private boolean isEndOfWord;
+
+        public TrieNode() {
+            children = new HashMap<>();
+            isEndOfWord = false;
+        }
     }
+    
 }

@@ -19,19 +19,20 @@ public class Ficha {
         setPuntos(punt);
         setLetra(letr);
         colocada = false;
-        setColor(new Color(12, 12, 12));
+        setColor(new Color(210, 247, 197));
     }
     
     public Ficha(Ficha fich){
         setPuntos(fich.getPuntos());
         setLetra(fich.getLetra());
         colocada = false;
-        setColor(new Color(12, 12, 12));
+        setColor(fich.getColor());
     }
     
     public Ficha(){
         setPuntos(-1);
         setLetra("  ");
+        setColor(new Color(15, 51, 39));
     }
 
     public int getPuntos() {
