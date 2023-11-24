@@ -70,9 +70,12 @@ public class JugadaActual {
         int triplic = 0;
         if(vertical){
             while(inicio.getFirst()< 15 && table.getFichaPar(inicio).isColocada()){
-                if(true){
-                    total+=table.getFichaPar(inicio).getPuntos();
-                }
+                int valorLetra = table.getFichaPar(inicio).getPuntos();
+                if(inicio.elementoDe(table.getListaAzul()))valorLetra*=3;
+                else if(inicio.elementoDe(table.getListaCeleste()))valorLetra*=2;
+                else if(inicio.elementoDe(table.getListaNaranja()))duplic++;
+                else if(inicio.elementoDe(table.getListaRojo()))triplic++;
+                total+=valorLetra;
                 
                 inicio.setFirst(inicio.getFirst()+1);
             }
@@ -80,9 +83,12 @@ public class JugadaActual {
         
         else{
             while(inicio.getSecond()< 15 && table.getFichaPar(inicio).isColocada()){
-                if(true){
-                    total+=table.getFichaPar(inicio).getPuntos();
-                }
+                int valorLetra = table.getFichaPar(inicio).getPuntos();
+                if(inicio.elementoDe(table.getListaAzul()))valorLetra*=3;
+                else if(inicio.elementoDe(table.getListaCeleste()))valorLetra*=2;
+                else if(inicio.elementoDe(table.getListaNaranja()))duplic++;
+                else if(inicio.elementoDe(table.getListaRojo()))triplic++;
+                total+=valorLetra;
                 
                 inicio.setSecond(inicio.getSecond()+1);
             }
@@ -130,7 +136,7 @@ public class JugadaActual {
             total += puntosPalabra(table, true, paresHorz);
         }
         
-        return 0;
+        return total;
     }
     
 }
