@@ -44,7 +44,18 @@ public class FichasTablero {
         }
     }
     
-
+    
+    public boolean equals(FichasTablero obj) {
+        if (this == obj)
+            return true;
+        for(int i = 0; i < 15; i++){
+            for(int j=0 ; j < 15; j++){
+                if(!getFicha(i,j).getLetra().equals(obj.getFicha(i, j).getLetra()))return false;
+            }
+        }
+            
+        return true;
+    }
 
     
     public Ficha getFicha(int i, int j){

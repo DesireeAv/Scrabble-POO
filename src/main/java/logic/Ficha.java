@@ -30,6 +30,7 @@ public class Ficha {
     }
     
     public Ficha(){
+        colocada = false;
         setPuntos(-1);
         setLetra("  ");
         setColor(new Color(15, 51, 39));

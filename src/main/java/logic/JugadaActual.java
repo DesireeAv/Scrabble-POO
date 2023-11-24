@@ -46,7 +46,8 @@ public class JugadaActual {
                 return true;
             }
         }
-        return false;
+        posicionesNuevas.add(par);
+        return true;
     }
     private Pair<Integer, Integer> inicioPalabra(FichasTablero table, boolean vertical, Pair<Integer, Integer>  par){
         Pair<Integer, Integer> res = new Pair(par);

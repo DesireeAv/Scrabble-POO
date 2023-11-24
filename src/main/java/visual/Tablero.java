@@ -17,7 +17,7 @@ import logic.*;
 public class Tablero extends javax.swing.JFrame {
     
     private int cantJug;
-    private int jugadorActual = 0;
+    private int jugadorActual = -1;
     private List<List<JButton>> matrizBotones = new LinkedList<>();
     private FichasTablero fichasTablero = new FichasTablero();
     private List<JButton> atrilBotones = new LinkedList<>();
@@ -27,13 +27,14 @@ public class Tablero extends javax.swing.JFrame {
     private List<Integer> puntuaciones = new LinkedList<>();
     private Atril atrilBackup = new Atril();
     private FichasTablero fichasTabBackup = new FichasTablero();
+    private int fichaEnJuego = -1;
     
      /**
      * Creates new form Tablero
      */
     
     public Tablero() {
-        cantJug = 1;
+        cantJug = 3;
         initComponents();
         llenarMatrizBotones();
         llenarAtrilBotones();
@@ -43,11 +44,12 @@ public class Tablero extends javax.swing.JFrame {
     }
     
     public void iniciarTurno(){
+        jugadorActual = ((jugadorActual+1)%cantJug);
         mostrarAtril(jugadorActual);
         atrilBackup = new Atril(atriles.get(jugadorActual));
         fichasTabBackup = new FichasTablero(fichasTablero);
-        mostrarFichasBackup();
-        jugadorActual = ((jugadorActual+1)%cantJug);
+        mostrarFichas();
+        
     }
     
     
@@ -88,7 +90,14 @@ public class Tablero extends javax.swing.JFrame {
         }
     }
     
-    
+    private void mostrarFichas(){
+        for(int i=0; i<matrizBotones.size(); i++){
+            for(int j = 0; j<matrizBotones.get(0).size() ; j++){
+                matrizBotones.get(i).get(j).setBackground(fichasTablero.getFicha(i, j).getColor());
+                matrizBotones.get(i).get(j).setText(fichasTablero.getFicha(i, j).getLetra());
+            }
+        }
+    }
     
     private void llenarAtrilBotones(){
         for (int i = 226; i < 233; i++) {
@@ -112,7 +121,7 @@ public class Tablero extends javax.swing.JFrame {
     
     private void mostrarAtril(int jugador){
         for(int i =0 ; i<atrilBotones.size() ; i++){
-            Ficha fichaI = atriles.get(jugador).getFicha(i);
+            Ficha fichaI = new Ficha(atriles.get(jugador).getFicha(i));
             atrilBotones.get(i).setBackground(fichaI.getColor());
             atrilBotones.get(i).setText(fichaI.getLetra());
         }
@@ -123,7 +132,8 @@ public class Tablero extends javax.swing.JFrame {
         atriles.add(jugadorActual, new Atril(atrilBackup));
         fichasTablero = new FichasTablero(fichasTabBackup);
         mostrarAtril(jugadorActual);
-        mostrarFichasBackup();
+        mostrarFichas();
+        jugadaAct = new JugadaActual();
     }
     
     private void saltarTurno(){
@@ -136,7 +146,34 @@ public class Tablero extends javax.swing.JFrame {
         }
     }
     
+    private void colocarFicha(int i, int j, Ficha ficha){
+        if(fichasTablero.colocarFicha(ficha, i, j)){
+            if(!jugadaAct.agregarPosicion(new Pair(i, j))){
+                JOptionPane.showMessageDialog(this, "Recuerda que para formar una palabra debes poner todas las\nfichas de forma horizontal o vertical.", "Ooops", NORMAL);
+                restablecerTurno();
+                fichaEnJuego = -1;
+            }
+        }
+    }
     
+    private void interactuarAtril(int index){
+        fichaEnJuego = -1;
+        if(!atriles.get(jugadorActual).getFicha(index).getLetra().equals("  ")){
+            fichaEnJuego = index;
+        }
+    }
+    
+    private void interactuarTabMesa(int i, int j){
+        if(!fichasTablero.getFicha(i, j).isColocada()){
+            if(fichaEnJuego > -1){
+                colocarFicha(i, j, atriles.get(jugadorActual).getFicha(fichaEnJuego));
+                mostrarFichas();
+                atriles.get(jugadorActual).sacarFicha(fichaEnJuego);
+                fichaEnJuego = -1;
+                mostrarAtril(jugadorActual);
+            }
+        }
+    }
 
 
     /**
@@ -427,6 +464,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton3.setForeground(new java.awt.Color(0, 102, 102));
         jButton3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, 60, 60));
 
         jButton4.setBackground(new java.awt.Color(15, 51, 39));
@@ -1092,6 +1134,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton98.setForeground(new java.awt.Color(0, 102, 102));
         jButton98.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton98.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton98.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton98ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton98, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 360, 60, 60));
 
         jButton99.setBackground(new java.awt.Color(15, 51, 39));
@@ -1197,6 +1244,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton113.setForeground(new java.awt.Color(0, 102, 102));
         jButton113.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton113.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton113.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton113ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton113, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 420, 60, 60));
 
         jButton114.setBackground(new java.awt.Color(15, 51, 39));
@@ -2028,6 +2080,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton226.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton226.setBorderPainted(false);
         jButton226.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton226.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton226ActionPerformed(evt);
+            }
+        });
 
         jButton227.setBackground(new java.awt.Color(15, 51, 39));
         jButton227.setFont(new java.awt.Font("Hack Nerd Font", 1, 18)); // NOI18N
@@ -2035,6 +2092,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton227.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton227.setBorderPainted(false);
         jButton227.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton227.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton227ActionPerformed(evt);
+            }
+        });
 
         jButton228.setBackground(new java.awt.Color(15, 51, 39));
         jButton228.setFont(new java.awt.Font("Hack Nerd Font", 1, 18)); // NOI18N
@@ -2042,6 +2104,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton228.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton228.setBorderPainted(false);
         jButton228.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton228.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton228ActionPerformed(evt);
+            }
+        });
 
         jButton229.setBackground(new java.awt.Color(15, 51, 39));
         jButton229.setFont(new java.awt.Font("Hack Nerd Font", 1, 18)); // NOI18N
@@ -2049,6 +2116,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton229.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton229.setBorderPainted(false);
         jButton229.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton229.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton229ActionPerformed(evt);
+            }
+        });
 
         jButton230.setBackground(new java.awt.Color(15, 51, 39));
         jButton230.setFont(new java.awt.Font("Hack Nerd Font", 1, 18)); // NOI18N
@@ -2056,6 +2128,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton230.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton230.setBorderPainted(false);
         jButton230.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton230.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton230ActionPerformed(evt);
+            }
+        });
 
         jButton231.setBackground(new java.awt.Color(15, 51, 39));
         jButton231.setFont(new java.awt.Font("Hack Nerd Font", 1, 18)); // NOI18N
@@ -2063,6 +2140,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton231.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton231.setBorderPainted(false);
         jButton231.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton231.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton231ActionPerformed(evt);
+            }
+        });
 
         jButton232.setBackground(new java.awt.Color(15, 51, 39));
         jButton232.setFont(new java.awt.Font("Hack Nerd Font", 1, 18)); // NOI18N
@@ -2070,6 +2152,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton232.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton232.setBorderPainted(false);
         jButton232.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton232.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton232ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -2191,6 +2278,7 @@ public class Tablero extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        interactuarTabMesa(0, 0);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton211ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton211ActionPerformed
@@ -2211,7 +2299,58 @@ public class Tablero extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        interactuarTabMesa(0, 1);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton226ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton226ActionPerformed
+        // TODO add your handling code here:
+        interactuarAtril(0);
+    }//GEN-LAST:event_jButton226ActionPerformed
+
+    private void jButton98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton98ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(6, 7);
+    }//GEN-LAST:event_jButton98ActionPerformed
+
+    private void jButton227ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton227ActionPerformed
+        // TODO add your handling code here:
+        interactuarAtril(1);
+    }//GEN-LAST:event_jButton227ActionPerformed
+
+    private void jButton228ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton228ActionPerformed
+        // TODO add your handling code here:
+        interactuarAtril(2);
+    }//GEN-LAST:event_jButton228ActionPerformed
+
+    private void jButton229ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton229ActionPerformed
+        // TODO add your handling code here:
+        interactuarAtril(3);
+    }//GEN-LAST:event_jButton229ActionPerformed
+
+    private void jButton230ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton230ActionPerformed
+        // TODO add your handling code here:
+        interactuarAtril(4);
+    }//GEN-LAST:event_jButton230ActionPerformed
+
+    private void jButton231ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton231ActionPerformed
+        // TODO add your handling code here:
+        interactuarAtril(5);
+    }//GEN-LAST:event_jButton231ActionPerformed
+
+    private void jButton232ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton232ActionPerformed
+        // TODO add your handling code here:
+        interactuarAtril(6);
+    }//GEN-LAST:event_jButton232ActionPerformed
+
+    private void jButton113ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton113ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(7, 7);
+    }//GEN-LAST:event_jButton113ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(0, 2);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
