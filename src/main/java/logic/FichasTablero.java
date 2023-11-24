@@ -202,7 +202,7 @@ public class FichasTablero {
     public void pintarVerdes(){
         for(int i = 0; i<15; i++){
             for(int j = 0; j<15; j++){
-                getFicha(i, j).setColor(new Color(15, 51, 39));
+                getFicha(i, j).setColor(new Color(100, 200,34));
                 getFicha(i, j).setLetra("  ");
               }
           }     
