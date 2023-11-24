@@ -13,10 +13,15 @@ import java.util.List;
  */
 public class FichasTablero {
     private List <List<Ficha>> matrizFichas = new LinkedList<>();
+    private List <Pair<Integer, Integer>> listaRojo = new LinkedList<>();
+    private List <Pair<Integer, Integer>> listaCeleste = new LinkedList<>();
+    private List <Pair<Integer, Integer>> listaAzul = new LinkedList<>();
+    private List <Pair<Integer, Integer>> listaNaranja = new LinkedList<>();
+    
     
     public FichasTablero(){
         llenarMatriz();
-    }
+   }
     
     public void llenarMatriz(){
         for(int i = 0 ; i<15 ; i++){
@@ -27,6 +32,72 @@ public class FichasTablero {
             matrizFichas.add(fila);
         }
     }
+    
+    public void llenarParesRojos() {
+        // Agregar los pares ordenados a la lista
+        listaRojo.add(new Pair<>(0, 0));
+        listaRojo.add(new Pair<>(0, 7));
+        listaRojo.add(new Pair<>(0, 14));
+        listaRojo.add(new Pair<>(7, 0));
+        listaRojo.add(new Pair<>(7, 14));
+        listaRojo.add(new Pair<>(14, 0));
+        listaRojo.add(new Pair<>(14, 7));
+        listaRojo.add(new Pair<>(14, 14));
+    }
+    
+    public void llenarParesCelestes() {
+        // Agregar los pares ordenados a la lista celeste
+        listaCeleste.add(new Pair<>(0, 3));
+        listaCeleste.add(new Pair<>(0, 11));
+        listaCeleste.add(new Pair<>(2, 6));
+        listaCeleste.add(new Pair<>(2, 8));
+        listaCeleste.add(new Pair<>(3, 0));
+        listaCeleste.add(new Pair<>(3, 7));
+        listaCeleste.add(new Pair<>(3, 14));
+        listaCeleste.add(new Pair<>(6, 2));
+        listaCeleste.add(new Pair<>(6, 6));
+        listaCeleste.add(new Pair<>(6, 8));
+        listaCeleste.add(new Pair<>(6, 12));
+        listaCeleste.add(new Pair<>(7, 3));
+        listaCeleste.add(new Pair<>(7, 11));
+        listaCeleste.add(new Pair<>(12, 0));
+        listaCeleste.add(new Pair<>(12, 7));
+        listaCeleste.add(new Pair<>(12, 14));
+        listaCeleste.add(new Pair<>(13, 6));
+        listaCeleste.add(new Pair<>(13, 8));
+        listaCeleste.add(new Pair<>(14, 3));
+        listaCeleste.add(new Pair<>(14, 12));
+    }
+    
+     public void llenarParesAzules() {
+        // Agregar los pares ordenados a la lista azul
+        listaAzul.add(new Pair<>(1, 5));
+        listaAzul.add(new Pair<>(1, 9));
+        listaAzul.add(new Pair<>(5, 1));
+        listaAzul.add(new Pair<>(5, 5));
+        listaAzul.add(new Pair<>(5, 9));
+        listaAzul.add(new Pair<>(5, 13));
+        listaAzul.add(new Pair<>(9, 1));
+        listaAzul.add(new Pair<>(9, 5));
+        listaAzul.add(new Pair<>(9, 9));
+        listaAzul.add(new Pair<>(9, 13));
+        listaAzul.add(new Pair<>(13, 5));
+        listaAzul.add(new Pair<>(13, 9));
+    } 
+     
+    public void llenarParesNaranja() {
+        // Agregar los pares ordenados a la lista naranja
+        listaNaranja.add(new Pair<>(1.1, 1.13));
+        listaNaranja.add(new Pair<>(2.2, 2.12));
+        listaNaranja.add(new Pair<>(3.3, 3.11));
+        listaNaranja.add(new Pair<>(4.4, 4.10));
+        listaNaranja.add(new Pair<>(7.7, 7.7));
+        listaNaranja.add(new Pair<>(10.10, 10.10));
+        listaNaranja.add(new Pair<>(12.12, 12.12));
+        listaNaranja.add(new Pair<>(13.13, 13.13));
+        listaNaranja.add(new Pair<>(14.14, 14.14));
+    }
+
     
     public Ficha getFicha(int i, int j){
         return matrizFichas.get(i).get(j);
