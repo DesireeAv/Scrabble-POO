@@ -4,6 +4,7 @@
  */
 package logic;
 
+import java.awt.Color;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -185,6 +186,47 @@ public class FichasTablero {
     public List<Pair<Integer, Integer>> getListaNaranja() {
         return listaNaranja;
     }
+    private FichasTablero fichasMesa = new FichasTablero();
     
     
+    public void pintarVerdes(){
+        for(int i = 0; i<15; i++){
+            for(int j = 0; j<15; j++){
+                fichasMesa.getFicha(i, j).setColor(Color.green);
+                fichasMesa.getFicha(i, j).setLetra("  ");
+              }
+          }     
+    }
+    
+    public void pintarRojas(){
+        for(Pair<Integer, Integer> par : listaRojo ){
+            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setColor(Color.red);
+            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setLetra("3P");
+        }
+    }
+    public void pintarCelestes(){
+        for(Pair<Integer, Integer> par : listaCeleste ){
+            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setColor(Color.white);
+            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setLetra("2L");
+        }
+    }
+    public void pintarAzules(){
+        for(Pair<Integer, Integer> par : listaAzul){
+            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setColor(Color.blue);
+            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setLetra("3L");
+        }
+    }
+    public void pintarNaranja(){
+        for(Pair<Integer, Integer> par : listaNaranja ){
+            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setColor(Color.orange);
+            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setLetra("2P");
+        }
+    }
+    public void pintarTodo(){
+        pintarVerdes();
+        pintarRojas();
+        pintarCelestes();
+        pintarAzules();
+        pintarNaranja();
+    }
 }
