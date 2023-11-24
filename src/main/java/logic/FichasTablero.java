@@ -210,25 +210,25 @@ public class FichasTablero {
     
     public void pintarRojas(){
         for(Pair<Integer, Integer> par : listaRojo ){
-            getFicha(par.getFirst(),par.getSecond()).setColor(Color.red);
+            getFicha(par.getFirst(),par.getSecond()).setColor(new Color(225, 43, 40));
             getFicha(par.getFirst(),par.getSecond()).setLetra("3P");
         }
     }
     public void pintarCelestes(){
         for(Pair<Integer, Integer> par : listaCeleste ){
-            getFicha(par.getFirst(),par.getSecond()).setColor(Color.white);
+            getFicha(par.getFirst(),par.getSecond()).setColor(new Color(44, 206, 180));
             getFicha(par.getFirst(),par.getSecond()).setLetra("2L");
         }
     }
     public void pintarAzules(){
         for(Pair<Integer, Integer> par : listaAzul){
-            getFicha(par.getFirst(),par.getSecond()).setColor(Color.blue);
+            getFicha(par.getFirst(),par.getSecond()).setColor(new Color(40, 100, 225));
             getFicha(par.getFirst(),par.getSecond()).setLetra("3L");
         }
     }
     public void pintarNaranja(){
         for(Pair<Integer, Integer> par : listaNaranja ){
-            getFicha(par.getFirst(),par.getSecond()).setColor(Color.orange);
+            getFicha(par.getFirst(),par.getSecond()).setColor(new Color(226, 160, 36));
             getFicha(par.getFirst(),par.getSecond()).setLetra("2P");
         }
     }
