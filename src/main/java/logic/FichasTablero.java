@@ -22,6 +22,7 @@ public class FichasTablero {
     
     public FichasTablero(){
         llenarMatriz();
+        llenarColores();
    }
     
     public void llenarMatriz(){
@@ -91,10 +92,7 @@ public class FichasTablero {
         return true;
     }
     
-    
-    
-    
-        public void llenarParesRojos() {
+    private void llenarParesRojos() {
         // Agregar los pares ordenados a la lista
         listaRojo.add(new Pair<>(0, 0));
         listaRojo.add(new Pair<>(0, 7));
@@ -106,7 +104,7 @@ public class FichasTablero {
         listaRojo.add(new Pair<>(14, 14));
     }
     
-    public void llenarParesCelestes() {
+    private void llenarParesCelestes() {
         // Agregar los pares ordenados a la lista celeste
         listaCeleste.add(new Pair<>(0, 3));
         listaCeleste.add(new Pair<>(0, 11));
@@ -121,16 +119,21 @@ public class FichasTablero {
         listaCeleste.add(new Pair<>(6, 12));
         listaCeleste.add(new Pair<>(7, 3));
         listaCeleste.add(new Pair<>(7, 11));
-        listaCeleste.add(new Pair<>(12, 0));
-        listaCeleste.add(new Pair<>(12, 7));
-        listaCeleste.add(new Pair<>(12, 14));
-        listaCeleste.add(new Pair<>(13, 6));
-        listaCeleste.add(new Pair<>(13, 8));
+        listaCeleste.add(new Pair<>(11, 0));
+        listaCeleste.add(new Pair<>(11, 7));
+        listaCeleste.add(new Pair<>(11, 14));
+        listaCeleste.add(new Pair<>(12, 6));
+        listaCeleste.add(new Pair<>(12, 8));
         listaCeleste.add(new Pair<>(14, 3));
-        listaCeleste.add(new Pair<>(14, 12));
+        listaCeleste.add(new Pair<>(14, 11));
+        listaCeleste.add(new Pair<>(8, 2));
+        listaCeleste.add(new Pair<>(8, 6));
+        listaCeleste.add(new Pair<>(8, 8));
+        listaCeleste.add(new Pair<>(8, 12));
+        
     }
     
-     public void llenarParesAzules() {
+    private void llenarParesAzules() {
         // Agregar los pares ordenados a la lista azul
         listaAzul.add(new Pair<>(1, 5));
         listaAzul.add(new Pair<>(1, 9));
@@ -146,7 +149,7 @@ public class FichasTablero {
         listaAzul.add(new Pair<>(13, 9));
     } 
      
-    public void llenarParesNaranja() {
+    private void llenarParesNaranja() {
         // Agregar los pares ordenados a la lista naranja
         listaNaranja.add(new Pair<>(1, 1));
         listaNaranja.add(new Pair<>(1, 13));
@@ -160,11 +163,18 @@ public class FichasTablero {
         listaNaranja.add(new Pair<>(10, 10));
         listaNaranja.add(new Pair<>(12, 12));
         listaNaranja.add(new Pair<>(13, 13));
-        listaNaranja.add(new Pair<>(14, 14));
-        listaNaranja.add(new Pair<>(14, 1));
-        listaNaranja.add(new Pair<>(13, 2));
-        listaNaranja.add(new Pair<>(12, 3));
-        listaNaranja.add(new Pair<>(11, 4));
+        listaNaranja.add(new Pair<>(11, 11));
+        listaNaranja.add(new Pair<>(13, 1));
+        listaNaranja.add(new Pair<>(12, 2));
+        listaNaranja.add(new Pair<>(11, 3));
+        listaNaranja.add(new Pair<>(10, 4));
+    }
+    
+    private void llenarColores(){
+        llenarParesAzules();
+        llenarParesCelestes();
+        llenarParesNaranja();
+        llenarParesRojos();
     }
 
     public List<List<Ficha>> getMatrizFichas() {
@@ -186,40 +196,40 @@ public class FichasTablero {
     public List<Pair<Integer, Integer>> getListaNaranja() {
         return listaNaranja;
     }
-    private FichasTablero fichasMesa = new FichasTablero();
+    
     
     
     public void pintarVerdes(){
         for(int i = 0; i<15; i++){
             for(int j = 0; j<15; j++){
-                fichasMesa.getFicha(i, j).setColor(Color.green);
-                fichasMesa.getFicha(i, j).setLetra("  ");
+                getFicha(i, j).setColor(Color.green);
+                getFicha(i, j).setLetra("  ");
               }
           }     
     }
     
     public void pintarRojas(){
         for(Pair<Integer, Integer> par : listaRojo ){
-            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setColor(Color.red);
-            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setLetra("3P");
+            getFicha(par.getFirst(),par.getSecond()).setColor(Color.red);
+            getFicha(par.getFirst(),par.getSecond()).setLetra("3P");
         }
     }
     public void pintarCelestes(){
         for(Pair<Integer, Integer> par : listaCeleste ){
-            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setColor(Color.white);
-            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setLetra("2L");
+            getFicha(par.getFirst(),par.getSecond()).setColor(Color.white);
+            getFicha(par.getFirst(),par.getSecond()).setLetra("2L");
         }
     }
     public void pintarAzules(){
         for(Pair<Integer, Integer> par : listaAzul){
-            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setColor(Color.blue);
-            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setLetra("3L");
+            getFicha(par.getFirst(),par.getSecond()).setColor(Color.blue);
+            getFicha(par.getFirst(),par.getSecond()).setLetra("3L");
         }
     }
     public void pintarNaranja(){
         for(Pair<Integer, Integer> par : listaNaranja ){
-            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setColor(Color.orange);
-            fichasMesa.getFicha(par.getFirst(),par.getSecond()).setLetra("2P");
+            getFicha(par.getFirst(),par.getSecond()).setColor(Color.orange);
+            getFicha(par.getFirst(),par.getSecond()).setLetra("2P");
         }
     }
     public void pintarTodo(){
@@ -228,5 +238,6 @@ public class FichasTablero {
         pintarCelestes();
         pintarAzules();
         pintarNaranja();
+//        getFicha(10,10).setColor(Color.red);
     }
 }

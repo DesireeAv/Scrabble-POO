@@ -4,19 +4,67 @@
  */
 package visual;
 import java.awt.Color;
+import java.util.LinkedList;
+import java.util.List;
+import javax.swing.JButton;
+import logic.*;
 
 /**
  *
  * @author klob
  */
 public class Tablero extends javax.swing.JFrame {
+    
+    private List<List<JButton>> matrizBotones = new LinkedList<>();
+    private FichasTablero fichasTablero = new FichasTablero();
+    
+    private void llenarMatrizBotones(){
+        // Inicializa la matriz
+        for (int i = 0; i < 15; i++) {
+            List<JButton> fila = new LinkedList<>();
+            matrizBotones.add(fila);
+        }
 
+        // Añade los botones a la matriz
+        for (int i = 0; i < 15; i++) {
+            for (int j = 0; j < 15; j++) {
+                int indice = i * 15 + j + 1;
+                String nombreBoton = "jButton" + indice;
+
+                try {
+                    // Accede al campo de la clase para obtener el JButton por nombre
+                    java.lang.reflect.Field field = Tablero.class.getDeclaredField(nombreBoton);
+                    JButton boton = (JButton) field.get(this);
+
+                    // Agrega el botón a la matriz
+                    matrizBotones.get(i).add(boton);
+                } catch (NoSuchFieldException | IllegalAccessException e) {
+                    e.printStackTrace();
+                }
+            }
+        }    
+    }
+    
+    private void pintarDefault(){
+        fichasTablero.pintarTodo();
+        for(int i=0; i<matrizBotones.size(); i++){
+            for(int j = 0; j<matrizBotones.get(0).size() ; j++){
+                matrizBotones.get(i).get(j).setBackground(fichasTablero.getFicha(i, j).getColor());
+            }
+        }
+    }
+    
     /**
      * Creates new form Tablero
      */
     public Tablero() {
         initComponents();
+        llenarMatrizBotones();
+        pintarDefault();
     }
+    
+    
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -2065,7 +2113,6 @@ public class Tablero extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        jButton1.setBackground(Color.red);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton211ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton211ActionPerformed
