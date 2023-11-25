@@ -7,6 +7,7 @@ import java.awt.Color;
 import java.util.LinkedList;
 import java.util.List;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import logic.*;
 
@@ -18,6 +19,7 @@ public class Tablero extends javax.swing.JFrame {
     
     private int cantJug;
     private int jugadorActual = -1;
+    private Trie trie = new Trie();
     private List<List<JButton>> matrizBotones = new LinkedList<>();
     private FichasTablero fichasTablero = new FichasTablero();
     private List<JButton> atrilBotones = new LinkedList<>();
@@ -28,6 +30,7 @@ public class Tablero extends javax.swing.JFrame {
     private Atril atrilBackup = new Atril();
     private FichasTablero fichasTabBackup = new FichasTablero();
     private int fichaEnJuego = -1;
+    private boolean swaping = false;
     
      /**
      * Creates new form Tablero
@@ -35,6 +38,7 @@ public class Tablero extends javax.swing.JFrame {
     
     public Tablero() {
         cantJug = 3;
+        llenarPuntuaciones();
         initComponents();
         llenarMatrizBotones();
         llenarAtrilBotones();
@@ -49,7 +53,7 @@ public class Tablero extends javax.swing.JFrame {
         atrilBackup = new Atril(atriles.get(jugadorActual));
         fichasTabBackup = new FichasTablero(fichasTablero);
         mostrarFichas();
-        
+        mostrarPuntos();
     }
     
     
@@ -79,6 +83,25 @@ public class Tablero extends javax.swing.JFrame {
                 }
             }
         }    
+    }
+    
+    private void llenarPuntuaciones(){
+        for(int i =0; i< cantJug; i++){
+            puntuaciones.add(0);
+        }
+    }
+    
+    private void mostrarPuntos(){
+        for (int i = 0; i < cantJug; i++) {
+            String nombreLabel = "jLabel" + (i+1);
+            try {
+                java.lang.reflect.Field field = Tablero.class.getDeclaredField(nombreLabel);
+                JLabel label = (JLabel) field.get(this);
+                label.setText("Jugador "+(i+1)+": "+puntuaciones.get(i)+" Pts");
+            } catch (NoSuchFieldException | IllegalAccessException e) {
+                e.printStackTrace();
+            }
+        }  
     }
     
     private void mostrarFichasBackup(){
@@ -158,12 +181,23 @@ public class Tablero extends javax.swing.JFrame {
     
     private void interactuarAtril(int index){
         fichaEnJuego = -1;
-        if(!atriles.get(jugadorActual).getFicha(index).getLetra().equals("  ")){
+        if(swaping){
+            int caso = atriles.get(jugadorActual).cambiarFicha(index, bolsaFichas);
+            if(caso == 0){
+                JOptionPane.showMessageDialog(this, "No se puede realizar swap", "BOLSA VACIA", HEIGHT);
+            }
+            else if (caso == 2){
+                mostrarAtril(jugadorActual);
+            }
+            swaping = false;
+        }
+        else if(!atriles.get(jugadorActual).getFicha(index).getLetra().equals("  ")){
             fichaEnJuego = index;
         }
     }
     
     private void interactuarTabMesa(int i, int j){
+        if (swaping) return;
         if(!fichasTablero.getFicha(i, j).isColocada()){
             if(fichaEnJuego > -1){
                 colocarFicha(i, j, atriles.get(jugadorActual).getFicha(fichaEnJuego));
@@ -173,6 +207,26 @@ public class Tablero extends javax.swing.JFrame {
                 mostrarAtril(jugadorActual);
             }
         }
+    }
+    
+    private void interactuarSwap(){
+        swaping = true;
+    }
+    
+    private void interactuarTerminar(){
+        swaping = false;
+        fichaEnJuego = -1;
+        if(!fichasTablero.equals(fichasTabBackup)){
+            if(fichasTablero.posicionLegal(trie)){
+                puntuaciones.set(jugadorActual, puntuaciones.get(jugadorActual)+ jugadaAct.puntosJugada(fichasTablero));
+            }
+            else{
+                JOptionPane.showMessageDialog(this, "Posición ilegal en el tablero, debe formar palabras válidas", "Inténtelo de nuevo", NORMAL);
+                restablecerTurno();
+                fichaEnJuego = -1;
+            }
+        }
+        JOptionPane.showMessageDialog(this, "Debe realizar una jugada, o saltar el turno", "No realizó ninguna jugada", HEIGHT);
     }
 
 
@@ -423,6 +477,10 @@ public class Tablero extends javax.swing.JFrame {
         jButton233 = new javax.swing.JButton();
         jButton234 = new javax.swing.JButton();
         jButton235 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -2238,11 +2296,27 @@ public class Tablero extends javax.swing.JFrame {
         });
         jPanel1.add(jButton235, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 730, 100, 72));
 
+        jLabel1.setFont(new java.awt.Font("Hack Nerd Font", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 145, 85));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 40, 240, 60));
+
+        jLabel2.setFont(new java.awt.Font("Hack Nerd Font", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 145, 85));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 110, 240, 60));
+
+        jLabel3.setFont(new java.awt.Font("Hack Nerd Font", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 145, 85));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 180, 240, 60));
+
+        jLabel4.setFont(new java.awt.Font("Hack Nerd Font", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 145, 85));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 250, 240, 60));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1517, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1520, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2286,7 +2360,8 @@ public class Tablero extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton211ActionPerformed
 
     private void jButton233ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton233ActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:\
+        interactuarSwap();
     }//GEN-LAST:event_jButton233ActionPerformed
 
     private void jButton234ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton234ActionPerformed
@@ -2623,6 +2698,10 @@ public class Tablero extends javax.swing.JFrame {
     private javax.swing.JButton jButton97;
     private javax.swing.JButton jButton98;
     private javax.swing.JButton jButton99;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
