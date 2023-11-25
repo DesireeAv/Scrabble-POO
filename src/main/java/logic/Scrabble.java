@@ -10,9 +10,9 @@ package logic;
  */
 public class Scrabble {
 
-    public static void main(String[] args) {
-        String res = "Hol";
-        res+="a";
-        System.out.println(res);
-    }
+//    public static void main(String[] args) {
+//        String res = "Hol";
+//        res+="a";
+//        System.out.println(res);
+//    }
 }

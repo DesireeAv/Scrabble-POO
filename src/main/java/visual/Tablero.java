@@ -29,8 +29,8 @@ public class Tablero extends javax.swing.JFrame {
     private List<Integer> puntuaciones = new LinkedList<>();
     private Atril atrilBackup = new Atril();
     private FichasTablero fichasTabBackup = new FichasTablero();
-    private int fichaEnJuego = -1;
-    private boolean swaping = false;
+    private int fichaEnJuego;
+    private boolean swaping;
     
      /**
      * Creates new form Tablero
@@ -48,6 +48,8 @@ public class Tablero extends javax.swing.JFrame {
     }
     
     public void iniciarTurno(){
+        fichaEnJuego = -1;
+        swaping = false;
         jugadorActual = ((jugadorActual+1)%cantJug);
         mostrarAtril(jugadorActual);
         atrilBackup = new Atril(atriles.get(jugadorActual));
@@ -217,8 +219,9 @@ public class Tablero extends javax.swing.JFrame {
         swaping = false;
         fichaEnJuego = -1;
         if(!fichasTablero.equals(fichasTabBackup)){
-            if(fichasTablero.posicionLegal(trie)){
+        if(fichasTablero.posicionLegal(trie)){
                 puntuaciones.set(jugadorActual, puntuaciones.get(jugadorActual)+ jugadaAct.puntosJugada(fichasTablero));
+                iniciarTurno();
             }
             else{
                 JOptionPane.showMessageDialog(this, "Posición ilegal en el tablero, debe formar palabras válidas", "Inténtelo de nuevo", NORMAL);
@@ -226,7 +229,8 @@ public class Tablero extends javax.swing.JFrame {
                 fichaEnJuego = -1;
             }
         }
-        JOptionPane.showMessageDialog(this, "Debe realizar una jugada, o saltar el turno", "No realizó ninguna jugada", HEIGHT);
+        else
+            JOptionPane.showMessageDialog(this, "Debe realizar una jugada, o saltar el turno", "No realizó ninguna jugada", HEIGHT);
     }
 
 
@@ -2801,6 +2805,7 @@ public class Tablero extends javax.swing.JFrame {
 
     private void jButton234ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton234ActionPerformed
         // TODO add your handling code here:
+        interactuarTerminar();
     }//GEN-LAST:event_jButton234ActionPerformed
 
     private void jButton235ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton235ActionPerformed

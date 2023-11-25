@@ -65,7 +65,6 @@ public class Atril {
     public Ficha sacarFicha(int index){
         if(listaFichas.get(index).getLetra().equals("  "))return null;
         Ficha res = new Ficha(listaFichas.get(index));
-        listaFichas.remove(index);
         listaFichas.add(index, new Ficha());
         return res;
     }
