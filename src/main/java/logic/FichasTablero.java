@@ -70,7 +70,7 @@ public class FichasTablero {
         if(matrizFichas.get(i).get(j).isColocada()) return false;
         fich.setColocada(true);
         matrizFichas.get(i).remove(j);
-        matrizFichas.get(i).add(j, fich);
+        matrizFichas.get(i).set(j, fich);
         return true;
     }
     
@@ -78,20 +78,28 @@ public class FichasTablero {
         String palabraVertical = "";
         String palabraHorizontal = "";
         for(int i = 0; i<matrizFichas.size() ; i++){
-            for(int j = 0; j<matrizFichas.get(0).size(); i++){
-                String letraVertical = matrizFichas.get(i).get(j).getLetra();
-                String letraHorizontal = matrizFichas.get(j).get(i).getLetra();
+            for(int j = 0; j<matrizFichas.get(0).size(); j++){
+                String letraVertical = matrizFichas.get(j).get(i).getLetra();
+                String letraHorizontal = matrizFichas.get(i).get(j).getLetra();
+                if(letraVertical.length()>1)letraVertical = "  ";
+                if(letraHorizontal.length()>1)letraHorizontal = "  ";
+//                System.out.println("VERT "+ letraVertical);
+//                System.out.println("HORZ "+ letraHorizontal);
                 if(letraVertical.equals("  ")){
                     if(!palabraVertical.equals("")){
-                        if(!trie.search(palabraVertical)) return false;
+                        if(palabraVertical.length()>1){
+                        System.out.println(palabraVertical);
+                        if(!trie.search(palabraVertical)) return false;}
                         palabraVertical = "";
                     }
                 }
                 else
                     palabraVertical+=letraVertical;
-                if(!letraHorizontal.equals("  ")){
+                if(letraHorizontal.equals("  ")){
                     if(!palabraHorizontal.equals("")){
-                        if(!trie.search(palabraHorizontal)) return false;
+//                        System.out.println(palabraHorizontal);
+                        if(palabraHorizontal.length()>1){
+                        if(!trie.search(palabraHorizontal)) return false;}
                         palabraHorizontal = "";
                     }
                 }
@@ -115,7 +123,7 @@ public class FichasTablero {
     private int cantFichas(){
         int cant = 0;
         for(int i = 0 ; i<15; i++){
-            for(int j = 0 ; i<15 ; i++){
+            for(int j = 0 ; j<15 ; j++){
                 if(matrizFichas.get(i).get(j).isColocada()) cant++;
             }
         }
@@ -126,8 +134,10 @@ public class FichasTablero {
     }
     
     private boolean esConexo(){
+//        System.out.println("Es conexo funcion");
         int contador = 0;
         int cantFichas = cantFichas();
+//        System.out.println(cantFichas);
         int[][] matVisitados = new int[15][15];
         int[][] posiciones = {{1,0}, {0, 1}, {-1, 0}, {0, -1}};
         Pair<Integer, Integer> par = new Pair(7,7);
@@ -137,10 +147,11 @@ public class FichasTablero {
         while(!bfs.isEmpty()){
             int i  = bfs.get(bfs.size() -1).getFirst();
             int j = bfs.get(bfs.size() -1).getSecond();
+//            System.out.println(i + " , " + j);
             contador++;
             matVisitados[i][j] = 1;
             for(int [] p : posiciones){
-                if(esValido(i+p[0], j+p[1]) && matrizFichas.get(i+p[0]).get(j+p[1]).isColocada()){
+                if(esValido(i+p[0], j+p[1]) && !(matVisitados[i+p[0]][j+p[1]]==1) && matrizFichas.get(i+p[0]).get(j+p[1]).isColocada()){
                     bfs.add(0, new Pair(i+p[0], j+p[1]));
                 }
             }
