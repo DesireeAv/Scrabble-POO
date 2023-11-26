@@ -1520,6 +1520,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton91.setForeground(new java.awt.Color(0, 102, 102));
         jButton91.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton91.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton91.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton91ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton91, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 60, 60));
 
         jButton92.setBackground(new java.awt.Color(15, 51, 39));
@@ -1527,6 +1532,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton92.setForeground(new java.awt.Color(0, 102, 102));
         jButton92.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton92.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton92.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton92ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton92, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 60, 60));
 
         jButton93.setBackground(new java.awt.Color(15, 51, 39));
@@ -1534,6 +1544,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton93.setForeground(new java.awt.Color(0, 102, 102));
         jButton93.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton93.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton93.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton93ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton93, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, 60, 60));
 
         jButton94.setBackground(new java.awt.Color(15, 51, 39));
@@ -1541,6 +1556,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton94.setForeground(new java.awt.Color(0, 102, 102));
         jButton94.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton94.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton94.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton94ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton94, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, 60, 60));
 
         jButton95.setBackground(new java.awt.Color(15, 51, 39));
@@ -1548,6 +1568,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton95.setForeground(new java.awt.Color(0, 102, 102));
         jButton95.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton95.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton95.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton95ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton95, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 360, 60, 60));
 
         jButton96.setBackground(new java.awt.Color(15, 51, 39));
@@ -1555,6 +1580,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton96.setForeground(new java.awt.Color(0, 102, 102));
         jButton96.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton96.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton96.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton96ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton96, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, 60, 60));
 
         jButton97.setBackground(new java.awt.Color(15, 51, 39));
@@ -1562,6 +1592,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton97.setForeground(new java.awt.Color(0, 102, 102));
         jButton97.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton97.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton97.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton97ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton97, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, 60, 60));
 
         jButton98.setBackground(new java.awt.Color(15, 51, 39));
@@ -1581,6 +1616,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton99.setForeground(new java.awt.Color(0, 102, 102));
         jButton99.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton99.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton99.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton99ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton99, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 360, 60, 60));
 
         jButton100.setBackground(new java.awt.Color(15, 51, 39));
@@ -1588,6 +1628,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton100.setForeground(new java.awt.Color(0, 102, 102));
         jButton100.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton100.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton100.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton100ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton100, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 360, 60, 60));
 
         jButton101.setBackground(new java.awt.Color(15, 51, 39));
@@ -1595,6 +1640,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton101.setForeground(new java.awt.Color(0, 102, 102));
         jButton101.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton101.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton101.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton101ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton101, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 360, 60, 60));
 
         jButton102.setBackground(new java.awt.Color(15, 51, 39));
@@ -1602,6 +1652,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton102.setForeground(new java.awt.Color(0, 102, 102));
         jButton102.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton102.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton102.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton102ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton102, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 360, 60, 60));
 
         jButton103.setBackground(new java.awt.Color(15, 51, 39));
@@ -1609,6 +1664,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton103.setForeground(new java.awt.Color(0, 102, 102));
         jButton103.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton103.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton103.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton103ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton103, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 360, 60, 60));
 
         jButton104.setBackground(new java.awt.Color(15, 51, 39));
@@ -1616,6 +1676,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton104.setForeground(new java.awt.Color(0, 102, 102));
         jButton104.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton104.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton104.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton104ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton104, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 360, 60, 60));
 
         jButton105.setBackground(new java.awt.Color(15, 51, 39));
@@ -1623,6 +1688,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton105.setForeground(new java.awt.Color(0, 102, 102));
         jButton105.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton105.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton105.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton105ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton105, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 360, 60, 60));
 
         jButton106.setBackground(new java.awt.Color(15, 51, 39));
@@ -1630,6 +1700,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton106.setForeground(new java.awt.Color(0, 102, 102));
         jButton106.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton106.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton106.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton106ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton106, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 60, 60));
 
         jButton107.setBackground(new java.awt.Color(15, 51, 39));
@@ -1637,6 +1712,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton107.setForeground(new java.awt.Color(0, 102, 102));
         jButton107.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton107.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton107.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton107ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton107, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 420, 60, 60));
 
         jButton108.setBackground(new java.awt.Color(15, 51, 39));
@@ -1644,6 +1724,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton108.setForeground(new java.awt.Color(0, 102, 102));
         jButton108.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton108.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton108.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton108ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton108, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 420, 60, 60));
 
         jButton109.setBackground(new java.awt.Color(15, 51, 39));
@@ -1651,6 +1736,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton109.setForeground(new java.awt.Color(0, 102, 102));
         jButton109.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton109.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton109.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton109ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton109, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 420, 60, 60));
 
         jButton110.setBackground(new java.awt.Color(15, 51, 39));
@@ -1658,6 +1748,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton110.setForeground(new java.awt.Color(0, 102, 102));
         jButton110.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton110.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton110.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton110ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton110, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 420, 60, 60));
 
         jButton111.setBackground(new java.awt.Color(15, 51, 39));
@@ -1665,6 +1760,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton111.setForeground(new java.awt.Color(0, 102, 102));
         jButton111.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton111.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton111.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton111ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton111, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 420, 60, 60));
 
         jButton112.setBackground(new java.awt.Color(15, 51, 39));
@@ -1672,6 +1772,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton112.setForeground(new java.awt.Color(0, 102, 102));
         jButton112.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton112.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton112.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton112ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton112, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 420, 60, 60));
 
         jButton113.setBackground(new java.awt.Color(15, 51, 39));
@@ -1691,6 +1796,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton114.setForeground(new java.awt.Color(0, 102, 102));
         jButton114.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton114.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton114.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton114ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton114, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 420, 60, 60));
 
         jButton115.setBackground(new java.awt.Color(15, 51, 39));
@@ -1698,6 +1808,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton115.setForeground(new java.awt.Color(0, 102, 102));
         jButton115.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton115.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton115.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton115ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton115, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 420, 60, 60));
 
         jButton116.setBackground(new java.awt.Color(15, 51, 39));
@@ -1705,6 +1820,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton116.setForeground(new java.awt.Color(0, 102, 102));
         jButton116.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton116.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton116.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton116ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton116, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 420, 60, 60));
 
         jButton117.setBackground(new java.awt.Color(15, 51, 39));
@@ -1712,6 +1832,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton117.setForeground(new java.awt.Color(0, 102, 102));
         jButton117.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton117.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton117.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton117ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton117, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 420, 60, 60));
 
         jButton118.setBackground(new java.awt.Color(15, 51, 39));
@@ -1719,6 +1844,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton118.setForeground(new java.awt.Color(0, 102, 102));
         jButton118.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton118.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton118.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton118ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton118, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 420, 60, 60));
 
         jButton119.setBackground(new java.awt.Color(15, 51, 39));
@@ -1726,6 +1856,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton119.setForeground(new java.awt.Color(0, 102, 102));
         jButton119.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton119.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton119.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton119ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton119, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 420, 60, 60));
 
         jButton120.setBackground(new java.awt.Color(15, 51, 39));
@@ -1733,6 +1868,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton120.setForeground(new java.awt.Color(0, 102, 102));
         jButton120.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton120.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton120.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton120ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton120, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 420, 60, 60));
 
         jButton121.setBackground(new java.awt.Color(15, 51, 39));
@@ -1752,6 +1892,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton122.setForeground(new java.awt.Color(0, 102, 102));
         jButton122.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton122.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton122.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton122ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton122, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 480, 60, 60));
 
         jButton123.setBackground(new java.awt.Color(15, 51, 39));
@@ -1759,6 +1904,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton123.setForeground(new java.awt.Color(0, 102, 102));
         jButton123.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton123.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton123.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton123ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton123, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 480, 60, 60));
 
         jButton124.setBackground(new java.awt.Color(15, 51, 39));
@@ -1766,6 +1916,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton124.setForeground(new java.awt.Color(0, 102, 102));
         jButton124.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton124.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton124.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton124ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton124, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 480, 60, 60));
 
         jButton125.setBackground(new java.awt.Color(15, 51, 39));
@@ -1773,6 +1928,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton125.setForeground(new java.awt.Color(0, 102, 102));
         jButton125.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton125.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton125.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton125ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton125, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 480, 60, 60));
 
         jButton126.setBackground(new java.awt.Color(15, 51, 39));
@@ -1780,6 +1940,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton126.setForeground(new java.awt.Color(0, 102, 102));
         jButton126.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton126.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton126.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton126ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton126, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 480, 60, 60));
 
         jButton127.setBackground(new java.awt.Color(15, 51, 39));
@@ -1787,6 +1952,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton127.setForeground(new java.awt.Color(0, 102, 102));
         jButton127.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton127.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton127.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton127ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton127, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 480, 60, 60));
 
         jButton128.setBackground(new java.awt.Color(15, 51, 39));
@@ -1794,6 +1964,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton128.setForeground(new java.awt.Color(0, 102, 102));
         jButton128.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton128.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton128.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton128ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton128, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 480, 60, 60));
 
         jButton129.setBackground(new java.awt.Color(15, 51, 39));
@@ -1801,6 +1976,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton129.setForeground(new java.awt.Color(0, 102, 102));
         jButton129.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton129.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton129.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton129ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton129, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 480, 60, 60));
 
         jButton130.setBackground(new java.awt.Color(15, 51, 39));
@@ -1808,6 +1988,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton130.setForeground(new java.awt.Color(0, 102, 102));
         jButton130.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton130.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton130.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton130ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton130, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 480, 60, 60));
 
         jButton131.setBackground(new java.awt.Color(15, 51, 39));
@@ -1815,6 +2000,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton131.setForeground(new java.awt.Color(0, 102, 102));
         jButton131.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton131.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton131.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton131ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton131, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 480, 60, 60));
 
         jButton132.setBackground(new java.awt.Color(15, 51, 39));
@@ -1822,6 +2012,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton132.setForeground(new java.awt.Color(0, 102, 102));
         jButton132.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton132.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton132.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton132ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton132, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 480, 60, 60));
 
         jButton133.setBackground(new java.awt.Color(15, 51, 39));
@@ -1829,6 +2024,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton133.setForeground(new java.awt.Color(0, 102, 102));
         jButton133.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton133.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton133.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton133ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton133, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 480, 60, 60));
 
         jButton134.setBackground(new java.awt.Color(15, 51, 39));
@@ -1836,6 +2036,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton134.setForeground(new java.awt.Color(0, 102, 102));
         jButton134.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton134.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton134.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton134ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton134, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 480, 60, 60));
 
         jButton135.setBackground(new java.awt.Color(15, 51, 39));
@@ -1843,6 +2048,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton135.setForeground(new java.awt.Color(0, 102, 102));
         jButton135.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton135.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton135.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton135ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton135, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 480, 60, 60));
 
         jButton136.setBackground(new java.awt.Color(15, 51, 39));
@@ -1862,6 +2072,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton137.setForeground(new java.awt.Color(0, 102, 102));
         jButton137.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton137.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton137.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton137ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton137, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 540, 60, 60));
 
         jButton138.setBackground(new java.awt.Color(15, 51, 39));
@@ -1869,6 +2084,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton138.setForeground(new java.awt.Color(0, 102, 102));
         jButton138.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton138.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton138.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton138ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton138, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 540, 60, 60));
 
         jButton139.setBackground(new java.awt.Color(15, 51, 39));
@@ -1876,6 +2096,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton139.setForeground(new java.awt.Color(0, 102, 102));
         jButton139.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton139.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton139.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton139ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton139, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 540, 60, 60));
 
         jButton140.setBackground(new java.awt.Color(15, 51, 39));
@@ -1883,6 +2108,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton140.setForeground(new java.awt.Color(0, 102, 102));
         jButton140.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton140.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton140.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton140ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton140, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 540, 60, 60));
 
         jButton141.setBackground(new java.awt.Color(15, 51, 39));
@@ -1890,6 +2120,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton141.setForeground(new java.awt.Color(0, 102, 102));
         jButton141.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton141.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton141.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton141ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton141, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 540, 60, 60));
 
         jButton142.setBackground(new java.awt.Color(15, 51, 39));
@@ -1897,6 +2132,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton142.setForeground(new java.awt.Color(0, 102, 102));
         jButton142.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton142.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton142.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton142ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton142, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 540, 60, 60));
 
         jButton143.setBackground(new java.awt.Color(15, 51, 39));
@@ -1904,6 +2144,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton143.setForeground(new java.awt.Color(0, 102, 102));
         jButton143.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton143.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton143.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton143ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton143, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 540, 60, 60));
 
         jButton144.setBackground(new java.awt.Color(15, 51, 39));
@@ -1911,6 +2156,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton144.setForeground(new java.awt.Color(0, 102, 102));
         jButton144.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton144.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton144.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton144ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton144, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 540, 60, 60));
 
         jButton145.setBackground(new java.awt.Color(15, 51, 39));
@@ -1918,6 +2168,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton145.setForeground(new java.awt.Color(0, 102, 102));
         jButton145.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton145.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton145.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton145ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton145, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 540, 60, 60));
 
         jButton146.setBackground(new java.awt.Color(15, 51, 39));
@@ -1925,6 +2180,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton146.setForeground(new java.awt.Color(0, 102, 102));
         jButton146.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton146.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton146.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton146ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton146, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 540, 60, 60));
 
         jButton147.setBackground(new java.awt.Color(15, 51, 39));
@@ -1932,6 +2192,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton147.setForeground(new java.awt.Color(0, 102, 102));
         jButton147.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton147.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton147.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton147ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton147, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 540, 60, 60));
 
         jButton148.setBackground(new java.awt.Color(15, 51, 39));
@@ -1939,6 +2204,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton148.setForeground(new java.awt.Color(0, 102, 102));
         jButton148.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton148.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton148.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton148ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton148, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 540, 60, 60));
 
         jButton149.setBackground(new java.awt.Color(15, 51, 39));
@@ -1946,6 +2216,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton149.setForeground(new java.awt.Color(0, 102, 102));
         jButton149.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton149.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton149.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton149ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton149, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 540, 60, 60));
 
         jButton150.setBackground(new java.awt.Color(15, 51, 39));
@@ -1953,6 +2228,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton150.setForeground(new java.awt.Color(0, 102, 102));
         jButton150.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton150.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton150.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton150ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton150, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 540, 60, 60));
 
         jButton151.setBackground(new java.awt.Color(15, 51, 39));
@@ -1972,6 +2252,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton152.setForeground(new java.awt.Color(0, 102, 102));
         jButton152.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton152.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton152.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton152ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton152, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 600, 60, 60));
 
         jButton153.setBackground(new java.awt.Color(15, 51, 39));
@@ -1979,6 +2264,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton153.setForeground(new java.awt.Color(0, 102, 102));
         jButton153.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton153.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton153.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton153ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton153, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 600, 60, 60));
 
         jButton154.setBackground(new java.awt.Color(15, 51, 39));
@@ -1986,6 +2276,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton154.setForeground(new java.awt.Color(0, 102, 102));
         jButton154.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton154.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton154.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton154ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton154, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 600, 60, 60));
 
         jButton155.setBackground(new java.awt.Color(15, 51, 39));
@@ -1993,6 +2288,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton155.setForeground(new java.awt.Color(0, 102, 102));
         jButton155.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton155.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton155.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton155ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton155, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 600, 60, 60));
 
         jButton156.setBackground(new java.awt.Color(15, 51, 39));
@@ -2000,6 +2300,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton156.setForeground(new java.awt.Color(0, 102, 102));
         jButton156.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton156.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton156.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton156ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton156, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 600, 60, 60));
 
         jButton157.setBackground(new java.awt.Color(15, 51, 39));
@@ -2007,6 +2312,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton157.setForeground(new java.awt.Color(0, 102, 102));
         jButton157.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton157.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton157.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton157ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton157, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 600, 60, 60));
 
         jButton158.setBackground(new java.awt.Color(15, 51, 39));
@@ -2014,6 +2324,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton158.setForeground(new java.awt.Color(0, 102, 102));
         jButton158.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton158.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton158.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton158ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton158, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 600, 60, 60));
 
         jButton159.setBackground(new java.awt.Color(15, 51, 39));
@@ -2021,6 +2336,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton159.setForeground(new java.awt.Color(0, 102, 102));
         jButton159.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton159.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton159.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton159ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton159, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 600, 60, 60));
 
         jButton160.setBackground(new java.awt.Color(15, 51, 39));
@@ -2028,6 +2348,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton160.setForeground(new java.awt.Color(0, 102, 102));
         jButton160.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton160.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton160.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton160ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton160, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 600, 60, 60));
 
         jButton161.setBackground(new java.awt.Color(15, 51, 39));
@@ -2035,6 +2360,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton161.setForeground(new java.awt.Color(0, 102, 102));
         jButton161.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton161.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton161.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton161ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton161, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 600, 60, 60));
 
         jButton162.setBackground(new java.awt.Color(15, 51, 39));
@@ -2042,6 +2372,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton162.setForeground(new java.awt.Color(0, 102, 102));
         jButton162.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton162.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton162.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton162ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton162, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 600, 60, 60));
 
         jButton163.setBackground(new java.awt.Color(15, 51, 39));
@@ -2049,6 +2384,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton163.setForeground(new java.awt.Color(0, 102, 102));
         jButton163.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton163.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton163.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton163ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton163, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 600, 60, 60));
 
         jButton164.setBackground(new java.awt.Color(15, 51, 39));
@@ -2056,6 +2396,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton164.setForeground(new java.awt.Color(0, 102, 102));
         jButton164.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton164.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton164.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton164ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton164, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 600, 60, 60));
 
         jButton165.setBackground(new java.awt.Color(15, 51, 39));
@@ -2063,6 +2408,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton165.setForeground(new java.awt.Color(0, 102, 102));
         jButton165.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton165.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton165.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton165ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton165, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 600, 60, 60));
 
         jButton166.setBackground(new java.awt.Color(15, 51, 39));
@@ -2082,6 +2432,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton167.setForeground(new java.awt.Color(0, 102, 102));
         jButton167.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton167.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton167.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton167ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton167, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 660, 60, 60));
 
         jButton168.setBackground(new java.awt.Color(15, 51, 39));
@@ -2089,6 +2444,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton168.setForeground(new java.awt.Color(0, 102, 102));
         jButton168.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton168.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton168.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton168ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton168, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 660, 60, 60));
 
         jButton169.setBackground(new java.awt.Color(15, 51, 39));
@@ -2096,6 +2456,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton169.setForeground(new java.awt.Color(0, 102, 102));
         jButton169.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton169.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton169.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton169ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton169, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 660, 60, 60));
 
         jButton170.setBackground(new java.awt.Color(15, 51, 39));
@@ -2103,6 +2468,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton170.setForeground(new java.awt.Color(0, 102, 102));
         jButton170.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton170.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton170.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton170ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton170, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 660, 60, 60));
 
         jButton171.setBackground(new java.awt.Color(15, 51, 39));
@@ -2110,6 +2480,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton171.setForeground(new java.awt.Color(0, 102, 102));
         jButton171.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton171.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton171.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton171ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton171, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 660, 60, 60));
 
         jButton172.setBackground(new java.awt.Color(15, 51, 39));
@@ -2117,6 +2492,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton172.setForeground(new java.awt.Color(0, 102, 102));
         jButton172.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton172.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton172.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton172ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton172, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 660, 60, 60));
 
         jButton173.setBackground(new java.awt.Color(15, 51, 39));
@@ -2124,6 +2504,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton173.setForeground(new java.awt.Color(0, 102, 102));
         jButton173.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton173.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton173.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton173ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton173, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 660, 60, 60));
 
         jButton174.setBackground(new java.awt.Color(15, 51, 39));
@@ -2131,6 +2516,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton174.setForeground(new java.awt.Color(0, 102, 102));
         jButton174.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton174.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton174.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton174ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton174, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 660, 60, 60));
 
         jButton175.setBackground(new java.awt.Color(15, 51, 39));
@@ -2138,6 +2528,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton175.setForeground(new java.awt.Color(0, 102, 102));
         jButton175.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton175.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton175.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton175ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton175, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 660, 60, 60));
 
         jButton176.setBackground(new java.awt.Color(15, 51, 39));
@@ -2145,6 +2540,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton176.setForeground(new java.awt.Color(0, 102, 102));
         jButton176.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton176.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton176.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton176ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton176, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 660, 60, 60));
 
         jButton177.setBackground(new java.awt.Color(15, 51, 39));
@@ -2152,6 +2552,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton177.setForeground(new java.awt.Color(0, 102, 102));
         jButton177.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton177.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton177.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton177ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton177, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 660, 60, 60));
 
         jButton178.setBackground(new java.awt.Color(15, 51, 39));
@@ -2159,6 +2564,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton178.setForeground(new java.awt.Color(0, 102, 102));
         jButton178.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton178.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton178.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton178ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton178, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 660, 60, 60));
 
         jButton179.setBackground(new java.awt.Color(15, 51, 39));
@@ -2166,6 +2576,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton179.setForeground(new java.awt.Color(0, 102, 102));
         jButton179.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton179.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton179.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton179ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton179, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 660, 60, 60));
 
         jButton180.setBackground(new java.awt.Color(15, 51, 39));
@@ -2173,6 +2588,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton180.setForeground(new java.awt.Color(0, 102, 102));
         jButton180.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton180.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton180.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton180ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton180, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 660, 60, 60));
 
         jButton181.setBackground(new java.awt.Color(15, 51, 39));
@@ -2192,6 +2612,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton182.setForeground(new java.awt.Color(0, 102, 102));
         jButton182.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton182.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton182.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton182ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton182, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 720, 60, 60));
 
         jButton183.setBackground(new java.awt.Color(15, 51, 39));
@@ -2199,6 +2624,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton183.setForeground(new java.awt.Color(0, 102, 102));
         jButton183.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton183.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton183.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton183ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton183, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 720, 60, 60));
 
         jButton184.setBackground(new java.awt.Color(15, 51, 39));
@@ -2206,6 +2636,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton184.setForeground(new java.awt.Color(0, 102, 102));
         jButton184.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton184.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton184.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton184ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton184, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 720, 60, 60));
 
         jButton185.setBackground(new java.awt.Color(15, 51, 39));
@@ -2213,6 +2648,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton185.setForeground(new java.awt.Color(0, 102, 102));
         jButton185.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton185.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton185.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton185ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton185, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 720, 60, 60));
 
         jButton186.setBackground(new java.awt.Color(15, 51, 39));
@@ -2220,6 +2660,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton186.setForeground(new java.awt.Color(0, 102, 102));
         jButton186.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton186.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton186.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton186ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton186, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 720, 60, 60));
 
         jButton187.setBackground(new java.awt.Color(15, 51, 39));
@@ -2227,6 +2672,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton187.setForeground(new java.awt.Color(0, 102, 102));
         jButton187.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton187.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton187.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton187ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton187, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 720, 60, 60));
 
         jButton188.setBackground(new java.awt.Color(15, 51, 39));
@@ -2234,6 +2684,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton188.setForeground(new java.awt.Color(0, 102, 102));
         jButton188.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton188.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton188.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton188ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton188, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 720, 60, 60));
 
         jButton189.setBackground(new java.awt.Color(15, 51, 39));
@@ -2241,6 +2696,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton189.setForeground(new java.awt.Color(0, 102, 102));
         jButton189.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton189.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton189.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton189ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton189, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 720, 60, 60));
 
         jButton190.setBackground(new java.awt.Color(15, 51, 39));
@@ -2248,6 +2708,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton190.setForeground(new java.awt.Color(0, 102, 102));
         jButton190.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton190.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton190.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton190ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton190, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 720, 60, 60));
 
         jButton191.setBackground(new java.awt.Color(15, 51, 39));
@@ -2255,6 +2720,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton191.setForeground(new java.awt.Color(0, 102, 102));
         jButton191.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton191.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton191.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton191ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton191, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 720, 60, 60));
 
         jButton192.setBackground(new java.awt.Color(15, 51, 39));
@@ -2262,6 +2732,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton192.setForeground(new java.awt.Color(0, 102, 102));
         jButton192.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton192.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton192.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton192ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton192, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 720, 60, 60));
 
         jButton193.setBackground(new java.awt.Color(15, 51, 39));
@@ -2269,6 +2744,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton193.setForeground(new java.awt.Color(0, 102, 102));
         jButton193.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton193.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton193.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton193ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton193, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 720, 60, 60));
 
         jButton194.setBackground(new java.awt.Color(15, 51, 39));
@@ -2276,6 +2756,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton194.setForeground(new java.awt.Color(0, 102, 102));
         jButton194.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton194.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton194.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton194ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton194, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 720, 60, 60));
 
         jButton195.setBackground(new java.awt.Color(15, 51, 39));
@@ -2283,6 +2768,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton195.setForeground(new java.awt.Color(0, 102, 102));
         jButton195.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton195.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton195.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton195ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton195, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 720, 60, 60));
 
         jButton196.setBackground(new java.awt.Color(15, 51, 39));
@@ -2302,6 +2792,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton197.setForeground(new java.awt.Color(0, 102, 102));
         jButton197.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton197.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton197.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton197ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton197, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 780, 60, 60));
 
         jButton198.setBackground(new java.awt.Color(15, 51, 39));
@@ -2309,6 +2804,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton198.setForeground(new java.awt.Color(0, 102, 102));
         jButton198.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton198.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton198.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton198ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton198, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 780, 60, 60));
 
         jButton199.setBackground(new java.awt.Color(15, 51, 39));
@@ -2316,6 +2816,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton199.setForeground(new java.awt.Color(0, 102, 102));
         jButton199.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton199.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton199.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton199ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton199, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 780, 60, 60));
 
         jButton200.setBackground(new java.awt.Color(15, 51, 39));
@@ -2323,6 +2828,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton200.setForeground(new java.awt.Color(0, 102, 102));
         jButton200.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton200.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton200.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton200ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton200, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 780, 60, 60));
 
         jButton201.setBackground(new java.awt.Color(15, 51, 39));
@@ -2330,6 +2840,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton201.setForeground(new java.awt.Color(0, 102, 102));
         jButton201.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton201.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton201.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton201ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton201, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 780, 60, 60));
 
         jButton202.setBackground(new java.awt.Color(15, 51, 39));
@@ -2337,6 +2852,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton202.setForeground(new java.awt.Color(0, 102, 102));
         jButton202.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton202.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton202.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton202ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton202, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 780, 60, 60));
 
         jButton203.setBackground(new java.awt.Color(15, 51, 39));
@@ -2344,6 +2864,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton203.setForeground(new java.awt.Color(0, 102, 102));
         jButton203.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton203.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton203.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton203ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton203, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 780, 60, 60));
 
         jButton204.setBackground(new java.awt.Color(15, 51, 39));
@@ -2351,6 +2876,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton204.setForeground(new java.awt.Color(0, 102, 102));
         jButton204.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton204.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton204.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton204ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton204, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 780, 60, 60));
 
         jButton205.setBackground(new java.awt.Color(15, 51, 39));
@@ -2358,6 +2888,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton205.setForeground(new java.awt.Color(0, 102, 102));
         jButton205.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton205.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton205.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton205ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton205, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 780, 60, 60));
 
         jButton206.setBackground(new java.awt.Color(15, 51, 39));
@@ -2365,6 +2900,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton206.setForeground(new java.awt.Color(0, 102, 102));
         jButton206.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton206.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton206.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton206ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton206, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 780, 60, 60));
 
         jButton207.setBackground(new java.awt.Color(15, 51, 39));
@@ -2372,6 +2912,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton207.setForeground(new java.awt.Color(0, 102, 102));
         jButton207.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton207.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton207.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton207ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton207, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 780, 60, 60));
 
         jButton208.setBackground(new java.awt.Color(15, 51, 39));
@@ -2379,6 +2924,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton208.setForeground(new java.awt.Color(0, 102, 102));
         jButton208.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton208.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton208.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton208ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton208, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 780, 60, 60));
 
         jButton209.setBackground(new java.awt.Color(15, 51, 39));
@@ -2386,6 +2936,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton209.setForeground(new java.awt.Color(0, 102, 102));
         jButton209.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton209.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton209.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton209ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton209, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 780, 60, 60));
 
         jButton210.setBackground(new java.awt.Color(15, 51, 39));
@@ -2393,6 +2948,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton210.setForeground(new java.awt.Color(0, 102, 102));
         jButton210.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton210.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton210.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton210ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton210, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 780, 60, 60));
 
         jButton211.setBackground(new java.awt.Color(15, 51, 39));
@@ -2412,6 +2972,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton212.setForeground(new java.awt.Color(0, 102, 102));
         jButton212.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton212.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton212.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton212ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton212, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 840, 60, 60));
 
         jButton213.setBackground(new java.awt.Color(15, 51, 39));
@@ -2419,6 +2984,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton213.setForeground(new java.awt.Color(0, 102, 102));
         jButton213.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton213.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton213.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton213ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton213, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 840, 60, 60));
 
         jButton214.setBackground(new java.awt.Color(15, 51, 39));
@@ -2426,6 +2996,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton214.setForeground(new java.awt.Color(0, 102, 102));
         jButton214.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton214.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton214.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton214ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton214, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 840, 60, 60));
 
         jButton215.setBackground(new java.awt.Color(15, 51, 39));
@@ -2433,6 +3008,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton215.setForeground(new java.awt.Color(0, 102, 102));
         jButton215.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton215.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton215.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton215ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton215, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 840, 60, 60));
 
         jButton216.setBackground(new java.awt.Color(15, 51, 39));
@@ -2440,6 +3020,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton216.setForeground(new java.awt.Color(0, 102, 102));
         jButton216.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton216.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton216.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton216ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton216, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 840, 60, 60));
 
         jButton217.setBackground(new java.awt.Color(15, 51, 39));
@@ -2447,6 +3032,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton217.setForeground(new java.awt.Color(0, 102, 102));
         jButton217.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton217.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton217.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton217ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton217, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 840, 60, 60));
 
         jButton218.setBackground(new java.awt.Color(15, 51, 39));
@@ -2454,6 +3044,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton218.setForeground(new java.awt.Color(0, 102, 102));
         jButton218.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton218.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton218.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton218ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton218, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 840, 60, 60));
 
         jButton219.setBackground(new java.awt.Color(15, 51, 39));
@@ -2461,6 +3056,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton219.setForeground(new java.awt.Color(0, 102, 102));
         jButton219.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton219.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton219.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton219ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton219, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 840, 60, 60));
 
         jButton220.setBackground(new java.awt.Color(15, 51, 39));
@@ -2468,6 +3068,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton220.setForeground(new java.awt.Color(0, 102, 102));
         jButton220.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton220.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton220.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton220ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton220, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 840, 60, 60));
 
         jButton221.setBackground(new java.awt.Color(15, 51, 39));
@@ -2475,6 +3080,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton221.setForeground(new java.awt.Color(0, 102, 102));
         jButton221.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton221.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton221.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton221ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton221, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 840, 60, 60));
 
         jButton222.setBackground(new java.awt.Color(15, 51, 39));
@@ -2482,6 +3092,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton222.setForeground(new java.awt.Color(0, 102, 102));
         jButton222.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton222.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton222.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton222ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton222, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 840, 60, 60));
 
         jButton223.setBackground(new java.awt.Color(15, 51, 39));
@@ -2489,6 +3104,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton223.setForeground(new java.awt.Color(0, 102, 102));
         jButton223.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton223.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton223.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton223ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton223, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 840, 60, 60));
 
         jButton224.setBackground(new java.awt.Color(15, 51, 39));
@@ -2496,6 +3116,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton224.setForeground(new java.awt.Color(0, 102, 102));
         jButton224.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton224.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton224.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton224ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton224, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 840, 60, 60));
 
         jButton225.setBackground(new java.awt.Color(15, 51, 39));
@@ -2503,6 +3128,11 @@ public class Tablero extends javax.swing.JFrame {
         jButton225.setForeground(new java.awt.Color(0, 102, 102));
         jButton225.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 233, 226), 1, true));
         jButton225.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton225.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton225ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton225, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 840, 60, 60));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 900, 900));
@@ -2689,26 +3319,32 @@ public class Tablero extends javax.swing.JFrame {
 
     private void jButton121ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton121ActionPerformed
         // TODO add your handling code here:
+        interactuarTabMesa(8 ,0);
     }//GEN-LAST:event_jButton121ActionPerformed
 
     private void jButton136ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton136ActionPerformed
         // TODO add your handling code here:
+        interactuarTabMesa(9 ,0);
     }//GEN-LAST:event_jButton136ActionPerformed
 
     private void jButton151ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton151ActionPerformed
         // TODO add your handling code here:
+        interactuarTabMesa(10 ,0);
     }//GEN-LAST:event_jButton151ActionPerformed
 
     private void jButton166ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton166ActionPerformed
         // TODO add your handling code here:
+        interactuarTabMesa(11,0);
     }//GEN-LAST:event_jButton166ActionPerformed
 
     private void jButton181ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton181ActionPerformed
         // TODO add your handling code here:
+         interactuarTabMesa(12,0);
     }//GEN-LAST:event_jButton181ActionPerformed
 
     private void jButton196ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton196ActionPerformed
         // TODO add your handling code here:
+        interactuarTabMesa(13,0);
     }//GEN-LAST:event_jButton196ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -2718,6 +3354,7 @@ public class Tablero extends javax.swing.JFrame {
 
     private void jButton211ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton211ActionPerformed
         // TODO add your handling code here:
+        interactuarTabMesa(14,0);
     }//GEN-LAST:event_jButton211ActionPerformed
 
     private void jButton233ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton233ActionPerformed
@@ -3221,6 +3858,636 @@ public class Tablero extends javax.swing.JFrame {
         // TODO add your handling code here:
         interactuarTabMesa(5, 14);
     }//GEN-LAST:event_jButton90ActionPerformed
+
+    private void jButton91ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton91ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(6, 0);
+    }//GEN-LAST:event_jButton91ActionPerformed
+
+    private void jButton92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton92ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(6, 1);
+    }//GEN-LAST:event_jButton92ActionPerformed
+
+    private void jButton93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton93ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(6, 2);
+    }//GEN-LAST:event_jButton93ActionPerformed
+
+    private void jButton94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton94ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(6, 3);
+    }//GEN-LAST:event_jButton94ActionPerformed
+
+    private void jButton95ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton95ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(6, 4);
+    }//GEN-LAST:event_jButton95ActionPerformed
+
+    private void jButton96ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton96ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(6, 5);
+    }//GEN-LAST:event_jButton96ActionPerformed
+
+    private void jButton97ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton97ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(6, 6);
+    }//GEN-LAST:event_jButton97ActionPerformed
+
+    private void jButton99ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton99ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(6, 8);
+    }//GEN-LAST:event_jButton99ActionPerformed
+
+    private void jButton100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton100ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(6, 9);
+    }//GEN-LAST:event_jButton100ActionPerformed
+
+    private void jButton101ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton101ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(6, 10);
+    }//GEN-LAST:event_jButton101ActionPerformed
+
+    private void jButton102ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton102ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(6, 11);
+    }//GEN-LAST:event_jButton102ActionPerformed
+
+    private void jButton103ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton103ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(6, 12);
+    }//GEN-LAST:event_jButton103ActionPerformed
+
+    private void jButton104ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton104ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(6, 13);
+    }//GEN-LAST:event_jButton104ActionPerformed
+
+    private void jButton105ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton105ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(6, 14);
+    }//GEN-LAST:event_jButton105ActionPerformed
+
+    private void jButton106ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton106ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(7 ,0);
+    }//GEN-LAST:event_jButton106ActionPerformed
+
+    private void jButton107ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton107ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(7 ,1);
+    }//GEN-LAST:event_jButton107ActionPerformed
+
+    private void jButton108ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton108ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(7 ,2);
+    }//GEN-LAST:event_jButton108ActionPerformed
+
+    private void jButton109ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton109ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(7 ,3);
+    }//GEN-LAST:event_jButton109ActionPerformed
+
+    private void jButton171ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton171ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(11 ,5);
+    }//GEN-LAST:event_jButton171ActionPerformed
+
+    private void jButton172ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton172ActionPerformed
+        // TODO add your handling code here:
+         interactuarTabMesa(11,6);
+    }//GEN-LAST:event_jButton172ActionPerformed
+
+    private void jButton110ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton110ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(7 ,4);
+    }//GEN-LAST:event_jButton110ActionPerformed
+
+    private void jButton111ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton111ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(7 ,5);
+    }//GEN-LAST:event_jButton111ActionPerformed
+
+    private void jButton112ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton112ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(7 ,6);
+    }//GEN-LAST:event_jButton112ActionPerformed
+
+    private void jButton114ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton114ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(7 ,8);
+    }//GEN-LAST:event_jButton114ActionPerformed
+
+    private void jButton115ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton115ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(7 ,9);
+    }//GEN-LAST:event_jButton115ActionPerformed
+
+    private void jButton116ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton116ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(7 ,10);
+    }//GEN-LAST:event_jButton116ActionPerformed
+
+    private void jButton117ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton117ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(7 ,11);
+    }//GEN-LAST:event_jButton117ActionPerformed
+
+    private void jButton118ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton118ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(7 ,12);
+    }//GEN-LAST:event_jButton118ActionPerformed
+
+    private void jButton119ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton119ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(7 ,13);
+    }//GEN-LAST:event_jButton119ActionPerformed
+
+    private void jButton120ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton120ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(7 ,14);
+    }//GEN-LAST:event_jButton120ActionPerformed
+
+    private void jButton122ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton122ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(8 ,1);
+    }//GEN-LAST:event_jButton122ActionPerformed
+
+    private void jButton126ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton126ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(8 ,5);
+    }//GEN-LAST:event_jButton126ActionPerformed
+
+    private void jButton123ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton123ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(8 ,2);
+    }//GEN-LAST:event_jButton123ActionPerformed
+
+    private void jButton124ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton124ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(8 ,3);
+    }//GEN-LAST:event_jButton124ActionPerformed
+
+    private void jButton125ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton125ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(8 ,4);
+    }//GEN-LAST:event_jButton125ActionPerformed
+
+    private void jButton127ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton127ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(8 ,6);
+    }//GEN-LAST:event_jButton127ActionPerformed
+
+    private void jButton128ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton128ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(8 ,7);
+    }//GEN-LAST:event_jButton128ActionPerformed
+
+    private void jButton129ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton129ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(8 ,8);
+    }//GEN-LAST:event_jButton129ActionPerformed
+
+    private void jButton130ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton130ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(8 ,9);
+    }//GEN-LAST:event_jButton130ActionPerformed
+
+    private void jButton132ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton132ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(8 ,11);
+    }//GEN-LAST:event_jButton132ActionPerformed
+
+    private void jButton131ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton131ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(8 ,10);
+    }//GEN-LAST:event_jButton131ActionPerformed
+
+    private void jButton133ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton133ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(8 ,12);
+    }//GEN-LAST:event_jButton133ActionPerformed
+
+    private void jButton134ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton134ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(8 ,13);
+    }//GEN-LAST:event_jButton134ActionPerformed
+
+    private void jButton135ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton135ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(8 ,14);
+    }//GEN-LAST:event_jButton135ActionPerformed
+
+    private void jButton137ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton137ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(9 ,1);
+    }//GEN-LAST:event_jButton137ActionPerformed
+
+    private void jButton138ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton138ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(9 ,2);
+    }//GEN-LAST:event_jButton138ActionPerformed
+
+    private void jButton139ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton139ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(9,3);
+    }//GEN-LAST:event_jButton139ActionPerformed
+
+    private void jButton140ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton140ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(9 ,4);
+    }//GEN-LAST:event_jButton140ActionPerformed
+
+    private void jButton141ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton141ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(9 ,5);
+    }//GEN-LAST:event_jButton141ActionPerformed
+
+    private void jButton142ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton142ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(9 ,6);
+    }//GEN-LAST:event_jButton142ActionPerformed
+
+    private void jButton143ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton143ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(9 ,7);
+    }//GEN-LAST:event_jButton143ActionPerformed
+
+    private void jButton144ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton144ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(9 ,8);
+    }//GEN-LAST:event_jButton144ActionPerformed
+
+    private void jButton145ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton145ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(9 ,9);
+    }//GEN-LAST:event_jButton145ActionPerformed
+
+    private void jButton146ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton146ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(9 ,10);
+    }//GEN-LAST:event_jButton146ActionPerformed
+
+    private void jButton147ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton147ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(9 ,11);
+    }//GEN-LAST:event_jButton147ActionPerformed
+
+    private void jButton148ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton148ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(9 ,12);
+    }//GEN-LAST:event_jButton148ActionPerformed
+
+    private void jButton149ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton149ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(9 ,13);
+    }//GEN-LAST:event_jButton149ActionPerformed
+
+    private void jButton150ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton150ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(9 ,14);
+    }//GEN-LAST:event_jButton150ActionPerformed
+
+    private void jButton152ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton152ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(10 ,1);
+    }//GEN-LAST:event_jButton152ActionPerformed
+
+    private void jButton153ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton153ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(10 ,2);
+    }//GEN-LAST:event_jButton153ActionPerformed
+
+    private void jButton154ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton154ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(10 ,3);
+    }//GEN-LAST:event_jButton154ActionPerformed
+
+    private void jButton155ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton155ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(10 ,4);
+    }//GEN-LAST:event_jButton155ActionPerformed
+
+    private void jButton156ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton156ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(10 ,5);
+    }//GEN-LAST:event_jButton156ActionPerformed
+
+    private void jButton157ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton157ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(10 ,6);
+    }//GEN-LAST:event_jButton157ActionPerformed
+
+    private void jButton158ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton158ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(10 ,7);
+    }//GEN-LAST:event_jButton158ActionPerformed
+
+    private void jButton159ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton159ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(10 ,8);
+    }//GEN-LAST:event_jButton159ActionPerformed
+
+    private void jButton160ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton160ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(10 ,9);
+    }//GEN-LAST:event_jButton160ActionPerformed
+
+    private void jButton161ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton161ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(10 ,10);
+    }//GEN-LAST:event_jButton161ActionPerformed
+
+    private void jButton162ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton162ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(10 ,11);
+    }//GEN-LAST:event_jButton162ActionPerformed
+
+    private void jButton163ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton163ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(10 ,12);
+    }//GEN-LAST:event_jButton163ActionPerformed
+
+    private void jButton164ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton164ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(10 ,13);
+    }//GEN-LAST:event_jButton164ActionPerformed
+
+    private void jButton165ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton165ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(10 ,14);
+    }//GEN-LAST:event_jButton165ActionPerformed
+
+    private void jButton167ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton167ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(11,1);
+    }//GEN-LAST:event_jButton167ActionPerformed
+
+    private void jButton168ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton168ActionPerformed
+        // TODO add your handling code here:
+         interactuarTabMesa(11,2);
+    }//GEN-LAST:event_jButton168ActionPerformed
+
+    private void jButton169ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton169ActionPerformed
+        // TODO add your handling code here:
+         interactuarTabMesa(11,3);
+    }//GEN-LAST:event_jButton169ActionPerformed
+
+    private void jButton170ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton170ActionPerformed
+        // TODO add your handling code here:
+         interactuarTabMesa(11,4);
+    }//GEN-LAST:event_jButton170ActionPerformed
+
+    private void jButton173ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton173ActionPerformed
+        // TODO add your handling code here:
+         interactuarTabMesa(11,7);
+    }//GEN-LAST:event_jButton173ActionPerformed
+
+    private void jButton174ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton174ActionPerformed
+        // TODO add your handling code here:
+         interactuarTabMesa(11,8);
+    }//GEN-LAST:event_jButton174ActionPerformed
+
+    private void jButton175ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton175ActionPerformed
+        // TODO add your handling code here:
+         interactuarTabMesa(11,9);
+    }//GEN-LAST:event_jButton175ActionPerformed
+
+    private void jButton176ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton176ActionPerformed
+        // TODO add your handling code here:
+         interactuarTabMesa(11,10);
+    }//GEN-LAST:event_jButton176ActionPerformed
+
+    private void jButton177ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton177ActionPerformed
+        // TODO add your handling code here:
+         interactuarTabMesa(11,11);
+    }//GEN-LAST:event_jButton177ActionPerformed
+
+    private void jButton178ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton178ActionPerformed
+        // TODO add your handling code here:
+         interactuarTabMesa(11,12);
+    }//GEN-LAST:event_jButton178ActionPerformed
+
+    private void jButton179ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton179ActionPerformed
+        // TODO add your handling code here:
+         interactuarTabMesa(11,13);
+    }//GEN-LAST:event_jButton179ActionPerformed
+
+    private void jButton180ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton180ActionPerformed
+        // TODO add your handling code here:
+         interactuarTabMesa(11,14);
+    }//GEN-LAST:event_jButton180ActionPerformed
+
+    private void jButton182ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton182ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(12,1);
+    }//GEN-LAST:event_jButton182ActionPerformed
+
+    private void jButton183ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton183ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(12,2);
+    }//GEN-LAST:event_jButton183ActionPerformed
+
+    private void jButton184ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton184ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(12,3);
+    }//GEN-LAST:event_jButton184ActionPerformed
+
+    private void jButton185ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton185ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(12,4);
+    }//GEN-LAST:event_jButton185ActionPerformed
+
+    private void jButton186ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton186ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(12,5);
+    }//GEN-LAST:event_jButton186ActionPerformed
+
+    private void jButton187ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton187ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(12,6);
+    }//GEN-LAST:event_jButton187ActionPerformed
+
+    private void jButton188ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton188ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(12,7);
+    }//GEN-LAST:event_jButton188ActionPerformed
+
+    private void jButton189ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton189ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(12,8);
+    }//GEN-LAST:event_jButton189ActionPerformed
+
+    private void jButton190ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton190ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(12,9);
+    }//GEN-LAST:event_jButton190ActionPerformed
+
+    private void jButton191ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton191ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(12,10);
+    }//GEN-LAST:event_jButton191ActionPerformed
+
+    private void jButton192ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton192ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(12,11);
+    }//GEN-LAST:event_jButton192ActionPerformed
+
+    private void jButton193ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton193ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(12,12);
+    }//GEN-LAST:event_jButton193ActionPerformed
+
+    private void jButton194ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton194ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(12,13);
+    }//GEN-LAST:event_jButton194ActionPerformed
+
+    private void jButton195ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton195ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(12,14);
+    }//GEN-LAST:event_jButton195ActionPerformed
+
+    private void jButton197ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton197ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(13,1);
+    }//GEN-LAST:event_jButton197ActionPerformed
+
+    private void jButton198ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton198ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(13,2);
+    }//GEN-LAST:event_jButton198ActionPerformed
+
+    private void jButton199ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton199ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(13,3);
+    }//GEN-LAST:event_jButton199ActionPerformed
+
+    private void jButton200ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton200ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(13,4);
+    }//GEN-LAST:event_jButton200ActionPerformed
+
+    private void jButton201ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton201ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(13,5);
+    }//GEN-LAST:event_jButton201ActionPerformed
+
+    private void jButton202ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton202ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(13,6);
+    }//GEN-LAST:event_jButton202ActionPerformed
+
+    private void jButton203ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton203ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(13,7);
+    }//GEN-LAST:event_jButton203ActionPerformed
+
+    private void jButton204ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton204ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(13,8);
+    }//GEN-LAST:event_jButton204ActionPerformed
+
+    private void jButton205ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton205ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(13,9);
+    }//GEN-LAST:event_jButton205ActionPerformed
+
+    private void jButton206ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton206ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(13,10);
+    }//GEN-LAST:event_jButton206ActionPerformed
+
+    private void jButton207ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton207ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(13,11);
+    }//GEN-LAST:event_jButton207ActionPerformed
+
+    private void jButton208ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton208ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(13,12);
+    }//GEN-LAST:event_jButton208ActionPerformed
+
+    private void jButton209ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton209ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(13,13);
+    }//GEN-LAST:event_jButton209ActionPerformed
+
+    private void jButton210ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton210ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(13,14);
+    }//GEN-LAST:event_jButton210ActionPerformed
+
+    private void jButton212ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton212ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(14,1);
+    }//GEN-LAST:event_jButton212ActionPerformed
+
+    private void jButton213ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton213ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(14,2);
+    }//GEN-LAST:event_jButton213ActionPerformed
+
+    private void jButton214ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton214ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(14,3);
+    }//GEN-LAST:event_jButton214ActionPerformed
+
+    private void jButton215ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton215ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(14,4);
+    }//GEN-LAST:event_jButton215ActionPerformed
+
+    private void jButton216ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton216ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(14,5);
+    }//GEN-LAST:event_jButton216ActionPerformed
+
+    private void jButton217ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton217ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(14,6);
+    }//GEN-LAST:event_jButton217ActionPerformed
+
+    private void jButton218ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton218ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(14,7);
+    }//GEN-LAST:event_jButton218ActionPerformed
+
+    private void jButton219ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton219ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(14,8);
+    }//GEN-LAST:event_jButton219ActionPerformed
+
+    private void jButton220ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton220ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(14,9);
+    }//GEN-LAST:event_jButton220ActionPerformed
+
+    private void jButton221ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton221ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(14,10);
+    }//GEN-LAST:event_jButton221ActionPerformed
+
+    private void jButton222ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton222ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(14,11);
+    }//GEN-LAST:event_jButton222ActionPerformed
+
+    private void jButton223ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton223ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(14,12);
+    }//GEN-LAST:event_jButton223ActionPerformed
+
+    private void jButton224ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton224ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(14,13);
+    }//GEN-LAST:event_jButton224ActionPerformed
+
+    private void jButton225ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton225ActionPerformed
+        // TODO add your handling code here:
+        interactuarTabMesa(14,14);
+    }//GEN-LAST:event_jButton225ActionPerformed
 
     /**
      * @param args the command line arguments
