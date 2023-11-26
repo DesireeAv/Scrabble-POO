@@ -4,6 +4,7 @@
  */
 package visual;
 import java.awt.Color;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import javax.swing.JButton;
@@ -19,6 +20,7 @@ public class Tablero extends javax.swing.JFrame {
     
     private int cantJug;
     private int jugadorActual = -1;
+    private int contadorSaltos;
     private Trie trie = new Trie();
     private List<List<JButton>> matrizBotones = new LinkedList<>();
     private FichasTablero fichasTablero = new FichasTablero();
@@ -31,6 +33,7 @@ public class Tablero extends javax.swing.JFrame {
     private FichasTablero fichasTabBackup = new FichasTablero();
     private int fichaEnJuego;
     private boolean swaping;
+    private List<Boolean> swaped = new LinkedList<>();
     
      /**
      * Creates new form Tablero
@@ -45,11 +48,13 @@ public class Tablero extends javax.swing.JFrame {
         llenarAtriles();
         fichasTablero.llenarCuadros();
         iniciarTurno();
+       
     }
     
     public void iniciarTurno(){
         fichaEnJuego = -1;
         swaping = false;
+        Collections.fill(swaped, false);
         jugadorActual = ((jugadorActual+1)%cantJug);
         mostrarAtril(jugadorActual);
         atrilBackup = new Atril(atriles.get(jugadorActual));
@@ -103,7 +108,8 @@ public class Tablero extends javax.swing.JFrame {
             } catch (NoSuchFieldException | IllegalAccessException e) {
                 e.printStackTrace();
             }
-        }  
+        }
+        jLabel5.setText("Turno del jugador "+(jugadorActual+1));
     }
     
     private void mostrarFichasBackup(){
@@ -134,6 +140,7 @@ public class Tablero extends javax.swing.JFrame {
             } catch (NoSuchFieldException | IllegalAccessException e) {
                 e.printStackTrace();
             }
+            swaped.add(false);
         }  
     }
     
@@ -163,6 +170,15 @@ public class Tablero extends javax.swing.JFrame {
     
     private void saltarTurno(){
         if(fichasTablero.equals(fichasTabBackup)){
+            if(atriles.get(jugadorActual).isEmpty() && bolsaFichas.isEmpty()){
+                contadorSaltos++;
+                if(contadorSaltos == 3){
+                    finJuego();
+                    return;
+                }
+            }
+            else
+                contadorSaltos = 0;
             iniciarTurno();
         }
         else{
@@ -183,13 +199,15 @@ public class Tablero extends javax.swing.JFrame {
     
     private void interactuarAtril(int index){
         fichaEnJuego = -1;
-        if(swaping){
+        if(swaping && !swaped.get(index)){
+            
             int caso = atriles.get(jugadorActual).cambiarFicha(index, bolsaFichas);
             if(caso == 0){
                 JOptionPane.showMessageDialog(this, "No se puede realizar swap", "BOLSA VACIA", HEIGHT);
             }
             else if (caso == 2){
                 mostrarAtril(jugadorActual);
+                swaped.set(index, true);
             }
             swaping = false;
         }
@@ -200,6 +218,7 @@ public class Tablero extends javax.swing.JFrame {
     
     private void interactuarTabMesa(int i, int j){
         if (swaping) return;
+        for(boolean swap : swaped){if(swap)return;}
         if(!fichasTablero.getFicha(i, j).isColocada()){
             if(fichaEnJuego > -1){
                 colocarFicha(i, j, atriles.get(jugadorActual).getFicha(fichaEnJuego));
@@ -219,19 +238,34 @@ public class Tablero extends javax.swing.JFrame {
         swaping = false;
         fichaEnJuego = -1;
         if(!fichasTablero.equals(fichasTabBackup)){
-        if(fichasTablero.posicionLegal(trie)){
+            if(fichasTablero.posicionLegal(trie)){
                 puntuaciones.set(jugadorActual, puntuaciones.get(jugadorActual)+ jugadaAct.puntosJugada(fichasTablero));
+                boolean llenado = atriles.get(jugadorActual).llenarAtril(bolsaFichas); //false si esta vacia la bolsa
+                if(!llenado && atriles.get(jugadorActual).isEmpty()){
+                    finJuego();
+                    return;
+                }
                 iniciarTurno();
             }
             else{
                 JOptionPane.showMessageDialog(this, "Posición ilegal en el tablero, debe formar palabras válidas", "Inténtelo de nuevo", NORMAL);
                 restablecerTurno();
-                fichaEnJuego = -1;
-            }
+                fichaEnJuego = -1;}
         }
-        else
+        else{
+            for(boolean swap : swaped){
+                if(swap){
+                    iniciarTurno(); return;
+                }
+            }
             JOptionPane.showMessageDialog(this, "Debe realizar una jugada, o saltar el turno", "No realizó ninguna jugada", HEIGHT);
+        }
     }
+    
+    private void finJuego(){
+        
+    }
+        
 
 
     /**
@@ -485,6 +519,7 @@ public class Tablero extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -2737,19 +2772,23 @@ public class Tablero extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Hack Nerd Font", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 145, 85));
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 40, 240, 60));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 360, 240, 60));
 
         jLabel2.setFont(new java.awt.Font("Hack Nerd Font", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 145, 85));
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 110, 240, 60));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 430, 240, 60));
 
         jLabel3.setFont(new java.awt.Font("Hack Nerd Font", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 145, 85));
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 180, 240, 60));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 500, 240, 60));
 
         jLabel4.setFont(new java.awt.Font("Hack Nerd Font", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 145, 85));
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 250, 240, 60));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 570, 240, 60));
+
+        jLabel5.setFont(new java.awt.Font("Hack Nerd Font", 1, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 145, 85));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 30, 550, 170));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -3577,6 +3616,7 @@ public class Tablero extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
