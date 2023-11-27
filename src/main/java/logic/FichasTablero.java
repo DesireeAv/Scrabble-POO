@@ -86,12 +86,9 @@ public class FichasTablero {
                 String letraHorizontal = matrizFichas.get(i).get(j).getLetra();
                 if(letraVertical.length()>1)letraVertical = "  ";
                 if(letraHorizontal.length()>1)letraHorizontal = "  ";
-//                System.out.println("VERT "+ letraVertical);
-//                System.out.println("HORZ "+ letraHorizontal);
                 if(letraVertical.equals("  ")){
                     if(!palabraVertical.equals("")){
                         if(palabraVertical.length()>1){
-//                        System.out.println(palabraVertical);
                         if(!trie.search(palabraVertical)) return false;}
                         palabraVertical = "";
                     }
@@ -100,7 +97,6 @@ public class FichasTablero {
                     palabraVertical+=letraVertical;
                 if(letraHorizontal.equals("  ")){
                     if(!palabraHorizontal.equals("")){
-//                        System.out.println(palabraHorizontal);
                         if(palabraHorizontal.length()>1){
                         if(!trie.search(palabraHorizontal)) return false;}
                         palabraHorizontal = "";
@@ -139,10 +135,9 @@ public class FichasTablero {
     }
     
     private boolean esConexo(){
-//        System.out.println("Es conexo funcion");
         int contador = 0;
         int cantFichas = cantFichas();
-//        System.out.println(cantFichas);
+        if(cantFichas == 1)return false;
         int[][] matVisitados = new int[15][15];
         int[][] posiciones = {{1,0}, {0, 1}, {-1, 0}, {0, -1}};
         Pair<Integer, Integer> par = new Pair(7,7);
@@ -152,7 +147,6 @@ public class FichasTablero {
         while(!bfs.isEmpty()){
             int i  = bfs.get(bfs.size() -1).getFirst();
             int j = bfs.get(bfs.size() -1).getSecond();
-//            System.out.println(i + " , " + j);
             contador++;
             matVisitados[i][j] = 1;
             for(int [] p : posiciones){

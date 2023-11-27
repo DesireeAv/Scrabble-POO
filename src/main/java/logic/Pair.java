@@ -43,11 +43,8 @@ public class Pair<A, B> {
     
 //    Metodo que verifica si es elemento de una lista
     public boolean elementoDe(List <Pair<A,B>> lista){
-        System.out.println("LARGO LISTA: "+lista.size());
         for(int i=0; i<lista.size();i++){
-            System.out.println("I orgi "+this.first+" I comp "+lista.get(i).getFirst()+" J orig "+this.second+" J comp"+lista.get(i).getSecond());
             if(lista.get(i).equals(this)){
-                System.out.println(" AQUI SON IGUALES");
                 return true;}
         }
         return false;

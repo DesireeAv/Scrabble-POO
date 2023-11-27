@@ -85,7 +85,6 @@ public class JugadaActual {
                 else if(inicio.elementoDe(table.getListaRojo())){
                     triplic++; table.getListaRojo().remove(inicio);
                 }
-                System.out.println(valorLetra);
                 total+=valorLetra;
                 
                 inicio.setFirst(inicio.getFirst()+1);
@@ -107,13 +106,11 @@ public class JugadaActual {
                 else if(inicio.elementoDe(table.getListaRojo())){
                     triplic++; table.getListaRojo().remove(inicio);
                 }
-                System.out.println(valorLetra);
                 total+=valorLetra;
                 
                 inicio.setSecond(inicio.getSecond()+1);
             }
         }
-        System.out.println("dup " + duplic + " // trip  "+ triplic);
         while(triplic!=0){
             triplic--;
             total*=3;
@@ -153,12 +150,10 @@ public class JugadaActual {
             }
         }
         for(Pair<Integer, Integer> paresVert : inicioVertical){
-            System.out.println("inicio vert  " + paresVert.getFirst() + "   "+paresVert.getSecond());
             total += puntosPalabra(table, true, new Pair(paresVert));
         }
         
         for(Pair<Integer, Integer> paresHorz : inicioHorizontal){
-            System.out.println("inicio horz  " + paresHorz.getFirst() + "   "+paresHorz.getSecond());
             total += puntosPalabra(table, false, new Pair(paresHorz));
         }
         

@@ -34,7 +34,6 @@ public class Trie {
     }
 
     public boolean search(String word) {
-        System.out.println(word);
         TrieNode node = root;
         for (char c : word.toCharArray()) {
             if (!node.children.containsKey(c)) {
