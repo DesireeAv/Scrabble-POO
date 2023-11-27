@@ -76,13 +76,13 @@ public class JugadaActual {
                 if(inicio.elementoDe(table.getListaAzul())){
                     valorLetra*=3; table.getListaAzul().remove(inicio);
                 }
-                if(inicio.elementoDe(table.getListaCeleste())){
+                else if(inicio.elementoDe(table.getListaCeleste())){
                     valorLetra*=2; table.getListaCeleste().remove(inicio);
                 }
-                if(inicio.elementoDe(table.getListaNaranja())){
+                else if(inicio.elementoDe(table.getListaNaranja())){
                     duplic++; table.getListaNaranja().remove(inicio);
                 }
-                if(inicio.elementoDe(table.getListaRojo())){
+                else if(inicio.elementoDe(table.getListaRojo())){
                     triplic++; table.getListaRojo().remove(inicio);
                 }
                 System.out.println(valorLetra);

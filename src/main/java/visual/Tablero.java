@@ -170,22 +170,17 @@ public class Tablero extends javax.swing.JFrame {
         fichaEnJuego = -1;
     }
     
-    private void saltarTurno(){
+    private void interactuarSaltar(){
         if(fichasTablero.equals(fichasTabBackup)){
-            if(atriles.get(jugadorActual).isEmpty() && bolsaFichas.isEmpty()){
-                contadorSaltos++;
-                if(contadorSaltos == cantJug){
-                    finJuego();
-                    return;
-                }
-            }
-            else
-                contadorSaltos = 0;
+            contadorSaltos++;
+            if(contadorSaltos == cantJug){
+                finJuego(); return;}
             iniciarTurno();
         }
         else{
             JOptionPane.showMessageDialog(this, "No se puede saltar el turno si ya realizó una jugada", "Error", HEIGHT);
             restablecerTurno();
+            
         }
     }
     
@@ -233,13 +228,13 @@ public class Tablero extends javax.swing.JFrame {
                 mostrarFichas();
                 atriles.get(jugadorActual).sacarFicha(fichaEnJuego);
                 mostrarAtril(jugadorActual);
-                
             }
         }
         fichaEnJuego = -1;
     }
     
     private void interactuarSwap(){
+        if(!fichasTablero.equals(fichasTabBackup))return;
         swaping = true;
     }
     
@@ -255,6 +250,7 @@ public class Tablero extends javax.swing.JFrame {
                     return;
                 }
                 iniciarTurno();
+                contadorSaltos = 0;
             }
             else{
                 JOptionPane.showMessageDialog(this, "Posición ilegal en el tablero, debe formar palabras válidas", "Inténtelo de nuevo", NORMAL);
@@ -264,6 +260,10 @@ public class Tablero extends javax.swing.JFrame {
         else{
             for(boolean swap : swaped){
                 if(swap){
+                    contadorSaltos ++;
+                    if(contadorSaltos == cantJug){
+                        finJuego();return;
+                    }
                     iniciarTurno(); return;
                 }
             }
@@ -272,7 +272,9 @@ public class Tablero extends javax.swing.JFrame {
     }
     
     private void finJuego(){
+        this.setVisible(false);
         
+        PuntosFinales finJuego = new PuntosFinales(puntuaciones);
     }
         
 
@@ -3494,7 +3496,7 @@ public class Tablero extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton234ActionPerformed
 
     private void jButton235ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton235ActionPerformed
-        saltarTurno();
+        interactuarSaltar();
     }//GEN-LAST:event_jButton235ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
