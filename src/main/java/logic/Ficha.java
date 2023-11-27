@@ -25,7 +25,7 @@ public class Ficha {
     public Ficha(Ficha fich){
         setPuntos(fich.getPuntos());
         setLetra(fich.getLetra());
-        colocada = false;
+        colocada = fich.isColocada();
         setColor(fich.getColor());
     }
     

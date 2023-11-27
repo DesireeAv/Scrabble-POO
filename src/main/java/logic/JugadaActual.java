@@ -60,7 +60,7 @@ public class JugadaActual {
         }
         while(table.getFichaPar(par).isColocada() && -1 < par.getSecond()){
             res = new Pair(par);
-            par.setSecond(par.getSecond() + 1);
+            par.setSecond(par.getSecond()-1);
         }
         return res;
     }
@@ -69,13 +69,23 @@ public class JugadaActual {
         int total = 0;
         int duplic = 0;
         int triplic = 0;
+        
         if(vertical){
             while(inicio.getFirst()< 15 && table.getFichaPar(inicio).isColocada()){
                 int valorLetra = table.getFichaPar(inicio).getPuntos();
-                if(inicio.elementoDe(table.getListaAzul()))valorLetra*=3;
-                else if(inicio.elementoDe(table.getListaCeleste()))valorLetra*=2;
-                else if(inicio.elementoDe(table.getListaNaranja()))duplic++;
-                else if(inicio.elementoDe(table.getListaRojo()))triplic++;
+                if(inicio.elementoDe(table.getListaAzul())){
+                    valorLetra*=3; table.getListaAzul().remove(inicio);
+                }
+                if(inicio.elementoDe(table.getListaCeleste())){
+                    valorLetra*=2; table.getListaCeleste().remove(inicio);
+                }
+                if(inicio.elementoDe(table.getListaNaranja())){
+                    duplic++; table.getListaNaranja().remove(inicio);
+                }
+                if(inicio.elementoDe(table.getListaRojo())){
+                    triplic++; table.getListaRojo().remove(inicio);
+                }
+                System.out.println(valorLetra);
                 total+=valorLetra;
                 
                 inicio.setFirst(inicio.getFirst()+1);
@@ -85,19 +95,31 @@ public class JugadaActual {
         else{
             while(inicio.getSecond()< 15 && table.getFichaPar(inicio).isColocada()){
                 int valorLetra = table.getFichaPar(inicio).getPuntos();
-                if(inicio.elementoDe(table.getListaAzul()))valorLetra*=3;
-                else if(inicio.elementoDe(table.getListaCeleste()))valorLetra*=2;
-                else if(inicio.elementoDe(table.getListaNaranja()))duplic++;
-                else if(inicio.elementoDe(table.getListaRojo()))triplic++;
+                if(inicio.elementoDe(table.getListaAzul())){
+                    valorLetra*=3; table.getListaAzul().remove(inicio);
+                }
+                else if(inicio.elementoDe(table.getListaCeleste())){
+                    valorLetra*=2; table.getListaCeleste().remove(inicio);
+                }
+                else if(inicio.elementoDe(table.getListaNaranja())){
+                    duplic++; table.getListaNaranja().remove(inicio);
+                }
+                else if(inicio.elementoDe(table.getListaRojo())){
+                    triplic++; table.getListaRojo().remove(inicio);
+                }
+                System.out.println(valorLetra);
                 total+=valorLetra;
                 
                 inicio.setSecond(inicio.getSecond()+1);
             }
         }
-        for(;triplic!=0;triplic--){
+        System.out.println("dup " + duplic + " // trip  "+ triplic);
+        while(triplic!=0){
+            triplic--;
             total*=3;
         }
-        for(;duplic!=0;duplic--){
+        while(duplic!=0){
+            duplic--;
             total*=2;
         }
         
@@ -118,26 +140,6 @@ public class JugadaActual {
         return false;
     }
     
-//    private boolean esLegal(FichasTablero table){
-//        for(Pair<Integer, Integer> pares : posicionesNuevas){
-//            int columnaAct = pares.getSecond();
-//            int filaAct = pares.getFirst();
-//            if(columnaAct + 1 < 15 ){
-//                Pair ady = new Pair(pares.getFirst(), columnaAct +1);
-//                if(table.getFichaPar(ady).isColocada() && !ady.elementoDe(posicionesNuevas))return true;}
-//            if(columnaAct - 1 > -1 ){
-//                Pair ady = new Pair(pares.getFirst(), columnaAct - 1);
-//                if(table.getFichaPar(ady).isColocada() && !ady.elementoDe(posicionesNuevas))return true;}
-//            if(filaAct + 1 < 15 ){
-//                Pair ady = new Pair(filaAct + 1, pares.getSecond());
-//                if(table.getFichaPar(ady).isColocada() && !ady.elementoDe(posicionesNuevas))return true;}
-//            if(filaAct - 1 > -1 ){
-//                Pair ady = new Pair(filaAct - 1, pares.getSecond());
-//                if(table.getFichaPar(ady).isColocada() && !ady.elementoDe(posicionesNuevas))return true;
-//            }
-//        }
-//        return false;
-//    }
     
     
     public int puntosJugada(FichasTablero table){
@@ -151,11 +153,13 @@ public class JugadaActual {
             }
         }
         for(Pair<Integer, Integer> paresVert : inicioVertical){
-            total += puntosPalabra(table, true, paresVert);
+            System.out.println("inicio vert  " + paresVert.getFirst() + "   "+paresVert.getSecond());
+            total += puntosPalabra(table, true, new Pair(paresVert));
         }
         
         for(Pair<Integer, Integer> paresHorz : inicioHorizontal){
-            total += puntosPalabra(table, true, paresHorz);
+            System.out.println("inicio horz  " + paresHorz.getFirst() + "   "+paresHorz.getSecond());
+            total += puntosPalabra(table, false, new Pair(paresHorz));
         }
         
         return total;

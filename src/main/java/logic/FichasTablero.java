@@ -32,6 +32,10 @@ public class FichasTablero {
                 matrizFichas.get(matrizFichas.size()-1).add(new Ficha(ficha));
             }
         }
+        for(Pair<Integer, Integer> par : copia.getListaAzul()){listaAzul.add(new Pair(par));}
+        for(Pair<Integer, Integer> par : copia.getListaRojo()){listaRojo.add(new Pair(par));}
+        for(Pair<Integer, Integer> par : copia.getListaNaranja()){listaNaranja.add(new Pair(par));}
+        for(Pair<Integer, Integer> par : copia.getListaCeleste()){listaCeleste.add(new Pair(par));}
     }
     
     public void llenarMatriz(){
@@ -69,7 +73,6 @@ public class FichasTablero {
     public boolean colocarFicha(Ficha fich, int i, int j){
         if(matrizFichas.get(i).get(j).isColocada()) return false;
         fich.setColocada(true);
-        matrizFichas.get(i).remove(j);
         matrizFichas.get(i).set(j, fich);
         return true;
     }
@@ -88,7 +91,7 @@ public class FichasTablero {
                 if(letraVertical.equals("  ")){
                     if(!palabraVertical.equals("")){
                         if(palabraVertical.length()>1){
-                        System.out.println(palabraVertical);
+//                        System.out.println(palabraVertical);
                         if(!trie.search(palabraVertical)) return false;}
                         palabraVertical = "";
                     }
@@ -107,12 +110,14 @@ public class FichasTablero {
                     palabraHorizontal+=letraHorizontal;
                 if(j==14){
                     if(!palabraHorizontal.equals("")){
+                        if(! (palabraHorizontal.length() ==1)){
                         if(!trie.search(palabraHorizontal)) return false;
-                        palabraHorizontal = "";
+                        palabraHorizontal = "";}
                     }
                     if(!palabraVertical.equals("")){
+                        if(! (palabraVertical.length()==1)){
                         if(!trie.search(palabraVertical)) return false;
-                        palabraVertical = "";
+                        palabraVertical = "";}
                     }
                 }
             }

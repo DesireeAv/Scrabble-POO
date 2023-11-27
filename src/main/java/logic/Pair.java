@@ -5,6 +5,7 @@
 package logic;
 
 import java.util.List;
+import java.util.Objects;
 
 /**
  *
@@ -42,10 +43,26 @@ public class Pair<A, B> {
     
 //    Metodo que verifica si es elemento de una lista
     public boolean elementoDe(List <Pair<A,B>> lista){
+        System.out.println("LARGO LISTA: "+lista.size());
         for(int i=0; i<lista.size();i++){
-            if(lista.get(i).getFirst() == first  && lista.get(i).getSecond() == second)
-                return true;
+            System.out.println("I orgi "+this.first+" I comp "+lista.get(i).getFirst()+" J orig "+this.second+" J comp"+lista.get(i).getSecond());
+            if(lista.get(i).equals(this)){
+                System.out.println(" AQUI SON IGUALES");
+                return true;}
         }
         return false;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Pair that = (Pair) obj;
+        return first == that.first && second==that.second;
+    }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(first, second);
     }
 }

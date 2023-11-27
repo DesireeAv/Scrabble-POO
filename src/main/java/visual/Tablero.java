@@ -39,8 +39,9 @@ public class Tablero extends javax.swing.JFrame {
      * Creates new form Tablero
      */
     
-    public Tablero() {
-        cantJug = 3;
+    public Tablero(int cantidadJugadores) {
+
+        cantJug = cantidadJugadores;
         llenarPuntuaciones();
         initComponents();
         llenarMatrizBotones();
@@ -48,10 +49,11 @@ public class Tablero extends javax.swing.JFrame {
         llenarAtriles();
         fichasTablero.llenarCuadros();
         iniciarTurno();
-       
+        this.setVisible(true);
     }
     
     public void iniciarTurno(){
+        jugadaAct = new JugadaActual();
         fichaEnJuego = -1;
         swaping = false;
         Collections.fill(swaped, false);
@@ -160,19 +162,19 @@ public class Tablero extends javax.swing.JFrame {
     }
     
     private void restablecerTurno(){
-        atriles.remove(jugadorActual);
-        atriles.add(jugadorActual, new Atril(atrilBackup));
+        atriles.set(jugadorActual, new Atril(atrilBackup));
         fichasTablero = new FichasTablero(fichasTabBackup);
         mostrarAtril(jugadorActual);
         mostrarFichas();
         jugadaAct = new JugadaActual();
+        fichaEnJuego = -1;
     }
     
     private void saltarTurno(){
         if(fichasTablero.equals(fichasTabBackup)){
             if(atriles.get(jugadorActual).isEmpty() && bolsaFichas.isEmpty()){
                 contadorSaltos++;
-                if(contadorSaltos == 3){
+                if(contadorSaltos == cantJug){
                     finJuego();
                     return;
                 }
@@ -192,7 +194,6 @@ public class Tablero extends javax.swing.JFrame {
             if(!jugadaAct.agregarPosicion(new Pair(i, j))){
                 JOptionPane.showMessageDialog(this, "Recuerda que para formar una palabra debes poner todas las\nfichas de forma horizontal o vertical.", "Ooops", NORMAL);
                 restablecerTurno();
-                fichaEnJuego = -1;
             }
         }
     }
@@ -221,13 +222,21 @@ public class Tablero extends javax.swing.JFrame {
         for(boolean swap : swaped){if(swap)return;}
         if(!fichasTablero.getFicha(i, j).isColocada()){
             if(fichaEnJuego > -1){
+                if(atriles.get(jugadorActual).getFicha(fichaEnJuego).getLetra().equals(" ")){
+                    String nuevoChar = "AAA";
+                    while(!(nuevoChar.length()==1) || !(((int) nuevoChar.charAt(0) >64 && (int) nuevoChar.charAt(0) <91) || nuevoChar.equals("Ñ"))){
+                        nuevoChar = JOptionPane.showInputDialog("ESCRIBA LA LETRA POR LA QUE DESEA REEMPLAZAR EL ESPACIO");
+                    }
+                    atriles.get(jugadorActual).getFicha(fichaEnJuego).setLetra(nuevoChar);
+                }
                 colocarFicha(i, j, atriles.get(jugadorActual).getFicha(fichaEnJuego));
                 mostrarFichas();
                 atriles.get(jugadorActual).sacarFicha(fichaEnJuego);
-                fichaEnJuego = -1;
                 mostrarAtril(jugadorActual);
+                
             }
         }
+        fichaEnJuego = -1;
     }
     
     private void interactuarSwap(){
@@ -4611,37 +4620,6 @@ public class Tablero extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Tablero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Tablero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Tablero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Tablero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Tablero().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
