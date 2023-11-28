@@ -38,6 +38,7 @@ public class BolsaFichas {
         return fich;
     }
     
+    //Metodo que inserta una ficha a la bolsa, luego de insertarla vuelve a cambiar el orden de salida de la bolsa
     public void insertarFicha(Ficha fich){
         listaFichas.add(fich);
         cargarOrdenRandom();
@@ -58,6 +59,7 @@ public class BolsaFichas {
         return false;
     }
     
+    //Metodo que devuelve los puntos de la letra que le entra
     public int getLetterValue(String letter){
         String fichasUnPunto[] = {"A", "E", "O", "I", "S", "N", "L", "R", "U", "T"};
         String fichasDosPunto[] = {"D", "G"};

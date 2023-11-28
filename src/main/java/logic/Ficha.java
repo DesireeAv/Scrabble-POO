@@ -14,7 +14,7 @@ public class Ficha {
     private boolean colocada;
     private Color color;
     
-    
+    //Contructor, recibe la letra y los puntos que vale esa letra
     public Ficha(int punt, String letr){
         setPuntos(punt);
         setLetra(letr);
@@ -22,6 +22,7 @@ public class Ficha {
         setColor(new Color(210, 247, 197));
     }
     
+    //Contructor, recibe una ficha, usado para crear copias
     public Ficha(Ficha fich){
         setPuntos(fich.getPuntos());
         setLetra(fich.getLetra());
@@ -29,6 +30,7 @@ public class Ficha {
         setColor(fich.getColor());
     }
     
+    //Constructor por defecto, no recibe nada
     public Ficha(){
         colocada = false;
         setPuntos(-1);

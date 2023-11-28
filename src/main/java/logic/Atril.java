@@ -13,11 +13,12 @@ import java.util.List;
  */
 public class Atril {
     private List <Ficha> listaFichas = new LinkedList<>();
-
+    //Constructor por defecto, no recibe nada
     public Atril(){
         llenarDeFichas();
     }
     
+    //Constructor, recibe un atril, usado para hacer copias
     public Atril(Atril copia){
         for(Ficha ficha : copia.getListaFichas()){
             listaFichas.add(new Ficha(ficha));
@@ -36,7 +37,7 @@ public class Atril {
     }
     
     
-    
+    //Metodo para saber si el atril esta vacio
     public boolean isEmpty(){
         for(int i = 0; i<7 ; i++){
             if(!listaFichas.get(i).getLetra().equals("  "))
@@ -45,11 +46,15 @@ public class Atril {
         return true;
     }
     
+    
+    //Metodo que devuelve la ficha que esta en el indice que recibe la funcion
     public Ficha getFicha(int index){
         if(index < 0 || index > 6 )return null;
         return listaFichas.get(index);
     }
     
+    
+    //Metodo para agregar Ficha al atril
     public boolean agregarFicha(Ficha fich){
         if(fich == null) return false;
         for(int i=0; i<7 ; i++){
@@ -62,6 +67,7 @@ public class Atril {
         return false;
     }
     
+    //Metodo para quitar y devolver la ficha del atril que esta en el indice que recibe,
     public Ficha sacarFicha(int index){
         if(listaFichas.get(index).getLetra().equals("  "))return null;
         Ficha res = new Ficha(listaFichas.get(index));
@@ -82,6 +88,7 @@ public class Atril {
         return 2; // Ficha cambiada con exito
     }
     
+    //Metdo para llenar un atril
     private void llenarDeFichas(){
         for(int i = 0 ; i < 7 ; i++){
             listaFichas.add(new Ficha());

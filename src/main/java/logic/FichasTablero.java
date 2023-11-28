@@ -19,12 +19,13 @@ public class FichasTablero {
     private List <Pair<Integer, Integer>> listaAzul = new LinkedList<>();
     private List <Pair<Integer, Integer>> listaNaranja = new LinkedList<>();
     
-    
+    //Constructor por defecto
     public FichasTablero(){
         llenarMatriz();
         llenarColores();
     }
     
+    //Constructor que recibe una instancia de FichasTablero, usado para crear copias
     public FichasTablero(FichasTablero copia){
         for(List<Ficha> fila : copia.getMatrizFichas()){
             matrizFichas.add(new LinkedList<>());
@@ -38,6 +39,8 @@ public class FichasTablero {
         for(Pair<Integer, Integer> par : copia.getListaCeleste()){listaCeleste.add(new Pair(par));}
     }
     
+    
+    //Metodo que llena la matriz de fichas
     public void llenarMatriz(){
         for(int i = 0 ; i<15 ; i++){
             List<Ficha> fila = new LinkedList<>();
@@ -49,6 +52,8 @@ public class FichasTablero {
     }
     
     
+    
+    //Un es igual, pero con fichas
     public boolean equals(FichasTablero obj) {
         if (this == obj)
             return true;
@@ -77,6 +82,8 @@ public class FichasTablero {
         return true;
     }
     
+    
+    //Metodo que verifica que todas las palabras sean validas, recibe el trie
     public boolean posicionLegal(Trie trie){
         String palabraVertical = "";
         String palabraHorizontal = "";
@@ -121,6 +128,8 @@ public class FichasTablero {
         return esConexo();
     }
   
+    
+    //Metodo que devuelve la cantidad de fichas colocadas
     private int cantFichas(){
         int cant = 0;
         for(int i = 0 ; i<15; i++){
@@ -130,10 +139,14 @@ public class FichasTablero {
         }
         return cant;
     }
+    
+    //Metodo para comprobar que una ficha este dentro de la matriz
     private boolean esValido(int i, int j){
         return (i<15 && i>-1 && j<15 && j>-1);
     }
     
+    
+    //Metodo para comprobar que todas las fichas colocadas sean conexas
     private boolean esConexo(){
         int contador = 0;
         int cantFichas = cantFichas();
@@ -159,6 +172,8 @@ public class FichasTablero {
         return contador == cantFichas;
     }
     
+    
+    //Metodo para llenar la lista con los pares que tienen las coordenadas de los potenciadores rojos
     private void llenarParesRojos() {
         // Agregar los pares ordenados a la lista
         listaRojo.add(new Pair<>(0, 0));
@@ -171,6 +186,7 @@ public class FichasTablero {
         listaRojo.add(new Pair<>(14, 14));
     }
     
+    //Metodo para llenar la lista con los pares que tienen las coordenadas de los potenciadores celestes
     private void llenarParesCelestes() {
         // Agregar los pares ordenados a la lista celeste
         listaCeleste.add(new Pair<>(0, 3));
@@ -200,6 +216,8 @@ public class FichasTablero {
         
     }
     
+    
+    //Metodo para llenar la lista con los pares que tienen las coordenadas de los potenciadores azules
     private void llenarParesAzules() {
         // Agregar los pares ordenados a la lista azul
         listaAzul.add(new Pair<>(1, 5));
@@ -215,7 +233,9 @@ public class FichasTablero {
         listaAzul.add(new Pair<>(13, 5));
         listaAzul.add(new Pair<>(13, 9));
     } 
-     
+    
+    
+    //Metodo para llenar la lista con los pares que tienen las coordenadas de los potenciadores naranjas 
     private void llenarParesNaranja() {
         // Agregar los pares ordenados a la lista naranja
         listaNaranja.add(new Pair<>(1, 1));
@@ -237,6 +257,8 @@ public class FichasTablero {
         listaNaranja.add(new Pair<>(10, 4));
     }
     
+    
+    //Metodo que llena todas las listas de los potenciadores
     private void llenarColores(){
         llenarParesAzules();
         llenarParesCelestes();
@@ -265,7 +287,7 @@ public class FichasTablero {
     }
     
     
-    
+    //Metodo que pinta todas las casillas del tablero del juego
     public void pintarVerdes(){
         for(int i = 0; i<15; i++){
             for(int j = 0; j<15; j++){
@@ -275,36 +297,45 @@ public class FichasTablero {
           }     
     }
     
+    
+    //Metodo que pinta las casillas que tienen un potenciador rojo
     public void pintarRojas(){
         for(Pair<Integer, Integer> par : listaRojo ){
             getFicha(par.getFirst(),par.getSecond()).setColor(new Color(225, 43, 40));
             getFicha(par.getFirst(),par.getSecond()).setLetra("3P");
         }
     }
+    //Metodo que pinta las casillas que tienen un potenciador celeste
     public void pintarCelestes(){
         for(Pair<Integer, Integer> par : listaCeleste ){
             getFicha(par.getFirst(),par.getSecond()).setColor(new Color(44, 206, 180));
             getFicha(par.getFirst(),par.getSecond()).setLetra("2L");
         }
     }
+    
+    //Metodo que pinta las casillas que tienen un potenciador azul
     public void pintarAzules(){
         for(Pair<Integer, Integer> par : listaAzul){
             getFicha(par.getFirst(),par.getSecond()).setColor(new Color(40, 100, 225));
             getFicha(par.getFirst(),par.getSecond()).setLetra("3L");
         }
     }
+    
+    //Metodo que pinta las casillas que tienen un potenciador naranja
     public void pintarNaranja(){
         for(Pair<Integer, Integer> par : listaNaranja ){
             getFicha(par.getFirst(),par.getSecond()).setColor(new Color(226, 160, 36));
             getFicha(par.getFirst(),par.getSecond()).setLetra("2P");
         }
     }
+    
+    
+    //Metodo que pinta todo el tablero
     public void llenarCuadros(){
         pintarVerdes();
         pintarRojas();
         pintarCelestes();
         pintarAzules();
         pintarNaranja();
-//        getFicha(10,10).setColor(Color.red);
     }
 }

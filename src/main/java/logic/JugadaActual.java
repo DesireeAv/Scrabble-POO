@@ -20,6 +20,8 @@ public class JugadaActual {
     private Set<Pair<Integer, Integer>> inicioHorizontal = new HashSet<>();
     
 
+    
+    //Añade una posicion de acuerdo al tipo de jugada que se esta realizando, si la jugada llega a ser ilegal retorna falso
     public boolean agregarPosicion(Pair<Integer, Integer> par){
         if(posicionesNuevas.isEmpty()){
             posicionesNuevas.add(par); return true;
@@ -49,6 +51,10 @@ public class JugadaActual {
         posicionesNuevas.add(par);
         return true;
     }
+    
+    
+    
+    //Metodo que regresa el par ordenado de las coordenadas donde inicia la palabra
     private Pair<Integer, Integer> inicioPalabra(FichasTablero table, boolean vertical, Pair<Integer, Integer>  par){
         Pair<Integer, Integer> res = new Pair(par);
         if(vertical){
@@ -65,6 +71,8 @@ public class JugadaActual {
         return res;
     }
     
+    
+    //Metodo que devuelve los puntos totales de una palabra
     private int puntosPalabra(FichasTablero table, boolean vertical, Pair<Integer, Integer> inicio){
         int total = 0;
         int duplic = 0;
@@ -123,6 +131,8 @@ public class JugadaActual {
         return total;
     }
     
+    
+    //Metodo que devuelve verdadero si la ficha que se ingresa tiene otra ficha colocada a la izquierda o a la derecha
     private boolean buscarLados(Pair<Integer, Integer> par, FichasTablero table){
         int columnaAct = par.getSecond();
         if(columnaAct + 1 < 15 && table.getFicha(par.getFirst(), columnaAct + 1).isColocada()) return true;
@@ -130,6 +140,7 @@ public class JugadaActual {
         return false;
     }
     
+        //Metodo que devuelve verdadero si la ficha que se ingresa tiene otra ficha colocada arriba o abajo
     private boolean buscarArrAbaj(Pair<Integer, Integer> par, FichasTablero table){
         int filaAct = par.getFirst();
         if(filaAct + 1 < 15 && table.getFicha(filaAct + 1, par.getSecond()).isColocada()) return true;
@@ -139,6 +150,8 @@ public class JugadaActual {
     
     
     
+    
+    //Metodo que devuelve el total de puntos de una jugada
     public int puntosJugada(FichasTablero table){
         int total = 0;
         for(Pair<Integer, Integer> pares : posicionesNuevas){

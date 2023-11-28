@@ -22,6 +22,7 @@ public class Trie {
         fill();
     }
 
+    //Metodo que inserta una palabra al trie
     private void insert(String word) {
         TrieNode node = root;
         for (char c : word.toCharArray()) {
@@ -33,6 +34,8 @@ public class Trie {
         node.isEndOfWord = true;
     }
 
+    
+    //Metodo que verifica si la palabra esta en el trie
     public boolean search(String word) {
         TrieNode node = root;
         for (char c : word.toCharArray()) {
@@ -44,6 +47,7 @@ public class Trie {
         return node.isEndOfWord;
     }
     
+    //Metodo que llena el trie
     public void fill(){
         String nombreArchivo = "/DiccionarioLAST.txt";
 
